@@ -1,0 +1,9 @@
+.m-square-list{list-style:none;margin-left:0;padding-left:0}
+.m-square-list>li:not(.c-stat){padding-left:30px}
+.m-square-list>li:not(.c-stat):before{font-family:arial,helvetica,sans-serif;position:relative;float:left;color:var(--theme-bullet-color);text-indent:-30px;speak:none;content:'\25A0';top:-3px}
+.c-feature-subhead{max-width:822px;margin:0 auto}
+.c-app-module a.c-panel{width:100%;max-width:400px}
+@media screen and (min-width:64rem){div.c-team-chat-product-ui__container.v--inverse{grid-template-columns:44% 56%}
+.c-product-ui__team-chat.c-product-container{padding-left:60px;background:#4a154b}
+.c-product-ui__team-chat.c-product-container .doc_sharing_product_ui{width:34rem;margin-bottom:0}
+}

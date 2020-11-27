@@ -1,0 +1,18 @@
+.m-square-list{list-style:none;margin-left:0;padding-left:0}
+.m-square-list>li:not(.c-stat){padding-left:30px}
+.m-square-list>li:not(.c-stat):before{font-family:arial,helvetica,sans-serif;position:relative;float:left;color:var(--theme-bullet-color);text-indent:-30px;speak:none;content:'\25A0';top:-3px}
+.c-billboard{background-color:#f4ede4}
+.c-billboard__kicker__text{font-weight:700}
+.c-billboard__header__cta .c-content-switcher__cta:lang(de),.c-billboard__header__cta .c-content-switcher__cta:lang(es-419),.c-billboard__header__cta .c-content-switcher__cta:lang(es-ES),.c-billboard__header__cta .c-content-switcher__cta:lang(fr),.c-billboard__header__cta .c-content-switcher__cta:lang(pt){display:flex;flex-direction:column}
+.c-billboard__header__cta .c-content-switcher__cta:lang(de) .c-button+.c-button,.c-billboard__header__cta .c-content-switcher__cta:lang(es-419) .c-button+.c-button,.c-billboard__header__cta .c-content-switcher__cta:lang(es-ES) .c-button+.c-button,.c-billboard__header__cta .c-content-switcher__cta:lang(fr) .c-button+.c-button,.c-billboard__header__cta .c-content-switcher__cta:lang(pt) .c-button+.c-button{margin-top:.5rem;margin-left:0}
+@media screen and (min-width:80rem){.c-billboard__header__cta .c-content-switcher__cta:lang(de),.c-billboard__header__cta .c-content-switcher__cta:lang(es-419),.c-billboard__header__cta .c-content-switcher__cta:lang(es-ES),.c-billboard__header__cta .c-content-switcher__cta:lang(fr),.c-billboard__header__cta .c-content-switcher__cta:lang(pt){max-width:75%}
+}
+@media screen and (min-width:48rem) and (max-width:1172px){.c-billboard__header__cta .c-content-switcher__cta{display:flex;flex-direction:column}
+.c-billboard__header__cta .c-content-switcher__cta .c-button+.c-button{margin-top:.5rem;margin-left:0}
+}
+.c-billboard__wfb .c-billboard__content{align-items:start}
+.c-billboard__wfb .c-billboard__content .c-billboard__kicker{padding-top:30px}
+.c-feature-grid .c-feature-grid__item{padding:0}
+@media screen and (min-width:64rem){.u-padding-left-desktop-only{padding-left:6rem}
+}
+.c-slack-tips-card__title{font-size:1.8rem}

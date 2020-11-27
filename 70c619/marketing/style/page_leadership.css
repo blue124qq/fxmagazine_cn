@@ -1,0 +1,35 @@
+.m-square-list{list-style:none;margin-left:0;padding-left:0}
+.m-square-list>li:not(.c-stat){padding-left:30px}
+.m-square-list>li:not(.c-stat):before{font-family:arial,helvetica,sans-serif;position:relative;float:left;color:var(--theme-bullet-color);text-indent:-30px;speak:none;content:'\25A0';top:-3px}
+.leadership-image--mobile{width:100%;margin-bottom:2rem}
+.leadership-image--desktop{display:none}
+@media screen and (min-width:48rem){.leadership-image--mobile{display:none}
+.leadership-image--desktop{display:block;float:right;width:333px;margin:0 0 2rem 2rem}
+}
+@media screen and (min-width:80rem){.leadership-image--desktop{width:465px}
+.o-hero.leadership-bio{position:relative}
+.o-hero.leadership-bio:before{content:'';display:block;position:absolute;background-repeat:no-repeat;width:231px;height:167px;background-size:231px 167px;background-image:url(../../../80588/spacesuit/source/images/halftones/halftone-1.png);transform:rotate(90deg);top:30%;left:-31px}
+}
+@media screen and (min-width:80rem) and (-webkit-min-device-pixel-ratio:2),screen and (min-width:80rem) and (min-resolution:192dpi){.o-hero.leadership-bio:before{background-image:url(../../../80588/spacesuit/source/images/halftones/halftone-1@2x.png)}
+}
+.leadership-bio__footer{text-align:center}
+@media screen and (min-width:48rem){.leadership-bio__footer{text-align:initial;display:flex;justify-content:space-between;margin-bottom:2rem}
+}
+.leadership-bio__footer .o-section--feature__link::after{background:0 0;width:0;height:0;margin:0}
+.leadership-bio__footer .o-section--feature__link .c-link__text{margin-left:.25rem}
+.leadership-bio__footer .o-section--feature__link svg{fill:#1264a3}
+.o-card-pool{display:flex;position:relative;z-index:inherit;flex-wrap:wrap;margin:-1rem;justify-content:center}
+.o-card-pool>*{flex-basis:280px;margin:1rem;flex-grow:1;max-width:340px}
+@media screen and (min-width:64rem) and (max-width:1279px){.o-card-pool>*{flex-grow:0}
+}
+@media screen and (min-width:80rem){.o-card-pool>*{max-width:284px}
+}
+@media screen and (min-width:64rem){.o-card-pool{position:relative}
+.o-card-pool:before{content:'';display:block;position:absolute;background-repeat:no-repeat;width:161px;height:213px;background-size:161px 213px;background-image:url(../../../80588/spacesuit/source/images/tracks/tracks-1.png);z-index:-1;top:-112px;right:-45px;transform:rotate(98deg)}
+.o-card-pool:after{content:'';display:block;position:absolute;background-repeat:no-repeat;background-image:url(../../../80588/spacesuit/source/images/halftones/halftone-5.png);z-index:-1;top:-20px;left:-20px;width:132px;height:84px;background-size:132px 84px}
+}
+@media screen and (min-width:64rem) and (-webkit-min-device-pixel-ratio:2),screen and (min-width:64rem) and (min-resolution:192dpi){.o-card-pool:before{background-image:url(../../../80588/spacesuit/source/images/tracks/tracks-1@2x.png)}
+.o-card-pool:after{background-image:url(../../../80588/spacesuit/source/images/halftones/halftone-5@2x.png)}
+}
+@media screen and (min-width:48rem){.o-card-pool{justify-content:stretch}
+}

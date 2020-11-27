@@ -1,0 +1,7 @@
+.m-square-list{list-style:none;margin-left:0;padding-left:0}
+.m-square-list>li:not(.c-stat){padding-left:30px}
+.m-square-list>li:not(.c-stat):before{font-family:arial,helvetica,sans-serif;position:relative;float:left;color:var(--theme-bullet-color);text-indent:-30px;speak:none;content:'\25A0';top:-3px}
+@font-face{font-family:Slack-Tazugane;font-style:normal;font-weight:400;src:local('☺'),url(../../../../80588/spacesuit/source/fonts/tazugane/tazugane-light.woff2) format('woff2'),url(../../../../80588/spacesuit/source/fonts/tazugane/tazugane-light.woff) format('woff')}
+@font-face{font-family:Slack-Tazugane;font-style:normal;font-weight:500;src:local('☺'),url(../../../../80588/spacesuit/source/fonts/tazugane/tazugane-bold.woff2) format('woff2'),url(../../../../80588/spacesuit/source/fonts/tazugane/tazugane-bold.woff) format('woff')}
+@font-face{font-family:Slack-Tazugane;font-style:normal;font-weight:700;src:local('☺'),url(../../../../80588/spacesuit/source/fonts/tazugane/tazugane-bold.woff2) format('woff2'),url(../../../../80588/spacesuit/source/fonts/tazugane/tazugane-bold.woff) format('woff')}
+@font-face{font-family:Slack-Tazugane;font-style:normal;font-weight:900;src:local('☺'),url(../../../../80588/spacesuit/source/fonts/tazugane/tazugane-black.woff2) format('woff2'),url(../../../../80588/spacesuit/source/fonts/tazugane/tazugane-black.woff) format('woff')}

@@ -1,0 +1,196 @@
+.m-square-list{list-style:none;margin-left:0;padding-left:0}
+.m-square-list>li:not(.c-stat){padding-left:30px}
+.m-square-list>li:not(.c-stat):before{font-family:arial,helvetica,sans-serif;position:relative;float:left;color:var(--theme-bullet-color);text-indent:-30px;speak:none;content:'\25A0';top:-3px}
+.o-wrap-small{max-width:700px}
+figcaption{display:none;text-align:center}
+table{margin:0}
+.hero-illustration-grid{display:flex;flex-direction:column;margin:0 auto;max-width:1410px}
+.hero-illustration-grid .hero-illustration-grid-row{display:flex;width:100%}
+.hero-illustration-grid .hero-illustration-grid-row.v--row-top{align-items:flex-end;max-width:1214px;align-self:flex-start}
+.hero-illustration-grid .hero-illustration-grid-row.v--row-bottom{max-width:1245px;align-self:flex-end;flex-wrap:wrap}
+@media screen and (min-width:48rem){.hero-illustration-grid .hero-illustration-grid-row.v--row-bottom{flex-wrap:nowrap}
+}
+.hero-illustration-grid .careers-happy,.hero-illustration-grid .careers-tl{background-color:#583950;flex:2;height:30vw;margin-right:1.5rem;margin-bottom:1.5rem}
+@media screen and (min-width:48rem){.hero-illustration-grid .careers-happy,.hero-illustration-grid .careers-tl{background-color:#ebb445;flex:4.15;height:37.3vw;max-height:520px}
+}
+.hero-illustration-grid .careers-main{background-image:url(../../../80588/marketing/img/careers/careers_hero_main.jpg);background-color:#ebb445;background-position:top center;background-repeat:no-repeat;background-size:cover;height:100%;width:100%}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.hero-illustration-grid .careers-main{background-image:url(../../../80588/marketing/img/careers/careers_hero_main@2x.jpg)}
+}
+.hero-illustration-grid .careers-strong{background-image:url(../../../80588/marketing/img/careers/careers_hero_strong.jpg);background-color:#ebb445;background-position:bottom center;background-repeat:no-repeat;background-size:contain;height:100%;width:100%}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.hero-illustration-grid .careers-strong{background-image:url(../../../80588/marketing/img/careers/careers_hero_strong@2x.jpg)}
+}
+.hero-illustration-grid .careers-happy{background-color:#65d477;margin-right:0;background-image:url(../../../80588/marketing/img/careers/careers_hero_happy.jpg);background-size:cover;background-position:center 25%;background-repeat:no-repeat}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.hero-illustration-grid .careers-happy{background-image:url(../../../80588/marketing/img/careers/careers_hero_happy@2x.jpg)}
+}
+@media screen and (min-width:48rem){.hero-illustration-grid .careers-happy{flex:2;height:24vw;max-height:360px}
+}
+.hero-illustration-grid .careers-mid{background-color:#ebb445;flex:100%;height:50vw;margin-bottom:1.5rem}
+@media screen and (min-width:48rem){.hero-illustration-grid .careers-mid{background-color:#583950;flex:auto;max-height:355px;height:18.1vw;margin-right:1.5rem;margin-bottom:0}
+}
+.hero-illustration-grid .careers-joy{background-image:url(../../../586de/marketing/img/careers/careers_hero_joy3.jpg);background-color:#c35d8e;background-position:center top 10%;background-repeat:no-repeat;background-size:contain;height:100%;width:100%}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.hero-illustration-grid .careers-joy{background-image:url(../../../586de/marketing/img/careers/careers_hero_joy3@2x.jpg)}
+}
+.hero-illustration-grid .careers-nails{background-color:#6581ea;flex:auto;height:30vw;margin-right:1.5rem;background-image:url(../../../80588/marketing/img/careers/careers_hero_nails.jpg);background-size:cover;background-position:center 25%;background-repeat:no-repeat}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.hero-illustration-grid .careers-nails{background-image:url(../../../80588/marketing/img/careers/careers_hero_nails@2x.jpg)}
+}
+@media screen and (min-width:48rem){.hero-illustration-grid .careers-nails{height:27.6vw;max-height:540px}
+}
+.hero-illustration-grid .careers-basketball{background-color:#2a3763;flex:auto;height:30vw;background-image:url(../../../1cff7/marketing/img/careers/careers_hero_smiling.jpg);background-size:cover;background-position:top center;background-repeat:no-repeat}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.hero-illustration-grid .careers-basketball{background-image:url(../../../1cff7/marketing/img/careers/careers_hero_smiling@2x.jpg)}
+}
+.improve-peoples-working-life{position:relative}
+.internships .jobs-listing-table:first-of-type{border-top:none}
+@media screen and (min-width:0) and (max-width:767px){.hero-illustration-grid .careers-joy{background-size:cover}
+.hero-illustration-grid .careers-basketball{background-size:cover;background-position:center top 5%}
+.intern-pictures{padding:0}
+}
+@media screen and (min-width:48rem){.hero-illustration-grid .careers-basketball{height:27.6vw;max-height:540px}
+.intern-pictures.o-wrap-large{padding:0 8vw}
+}
+.paper-airplane{position:absolute;top:-170px;left:-70px}
+.core-values{overflow:hidden}
+.core-values ul{padding:0}
+.core-values ul li{list-style:none;white-space:nowrap}
+.core-values-bg,:lang(ja) .core-values-bg{margin-top:0}
+@media screen and (min-width:80rem){:lang(ja) .core-values-bg{margin-top:-140px}
+}
+@media screen and (min-width:48rem){.core-values-bg{margin-top:150px;display:flex;justify-content:flex-end;align-items:flex-end}
+}
+@media screen and (min-width:64rem){.core-values-bg{margin-top:0}
+}
+@media screen and (min-width:80rem){.core-values-bg{margin-top:-140px}
+}
+.core-values-bg img{margin-top:0;margin-right:0}
+.office img{width:100%;display:block}
+.working-and-thriving ol{padding:0;font-size:2rem}
+.working-and-thriving h3{display:inline}
+.jobs-listing-table{table-layout:auto}
+.jobs-listing-table .wide{width:33%}
+.jobs-listing-table .narrow{width:10%}
+@media screen and (min-width:48rem){.core-values-bg img{margin-right:-9vw;margin-top:-109px}
+.us-employee-note p{text-align:center}
+.jobs-listing-table{table-layout:fixed}
+}
+.jobs-listing-table:first-of-type{border-top:4px solid #ebeaeb}
+.jobs-listing-table thead{background-color:#f5f5f5;border-top:4px solid #ebeaeb}
+.jobs-listing-table td{background-color:#fff;width:auto;color:#454545;transition:all .3s;padding:30px}
+.jobs-listing-table td:last-child{text-align:right}
+.jobs-listing-table tr:hover td{color:#611f69}
+.jobs-listing-table th{padding:30px}
+.jobs-listing-table a,.jobs-listing-table a:hover{border-bottom:none}
+.jobs-listing-table p.careers-title{margin-bottom:.5rem}
+.jobs-listing-table p.careers-title a.link-careers-apply,.jobs-listing-table p.careers-title a.link-careers-apply:lang(de),.jobs-listing-table p.careers-title a.link-careers-apply:lang(ja),.jobs-listing-table p.careers-title a.link-careers-apply:lang(ko){line-height:1.4}
+.arrow-icon{width:1rem;height:20px;vertical-align:top;fill:currentColor}
+.c-filter-items:not(.c-filter-header){cursor:auto}
+.c-filter{position:relative;z-index:1}
+.c-filter-no-results{margin:0 auto;padding:0 8vw}
+@media screen and (min-width:48rem){.c-filter-items:not(.c-filter-header){cursor:pointer}
+.c-filter-no-results{padding:0 4vw}
+}
+@media screen and (min-width:84.875rem){.c-filter-no-results{padding:0}
+}
+.c-select select{background-color:#fff}
+.careers-remote-copy{font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.44444444;letter-spacing:normal;font-size:1.125rem;max-width:700px;width:100%;margin:0 auto 4rem;padding:0 4vw}
+@media screen and (min-width:25rem){.core-values ul{column-count:2}
+.careers-remote-copy{font-size:calc(1.125rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-remote-copy{font-size:1.125rem}
+}
+.careers-remote-copy:lang(ja){font-family:Slack-Tazugane,Tahoma,Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.5;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-remote-copy:lang(ja){font-size:calc(1rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-remote-copy:lang(ja){font-size:1rem}
+}
+.careers-remote-copy:lang(de){@display-as-jumbo :            @font-family-display , 2.1875    , 3.    , 1.055555556 , @font-bold    , -1.5px;font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.5625;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-remote-copy:lang(de){font-size:calc(1rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-remote-copy:lang(de){font-size:1rem}
+}
+.careers-remote-copy:lang(ko){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.5;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-remote-copy:lang(ko){font-size:calc(1rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-remote-copy:lang(ko){font-size:1rem}
+}
+.careers-remote-copy:lang(zh){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.5;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-remote-copy:lang(zh){font-size:calc(1rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-remote-copy:lang(zh){font-size:1rem}
+}
+.careers-remote-copy:lang(ru){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.5;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-remote-copy:lang(ru){font-size:calc(1rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-remote-copy:lang(ru){font-size:1rem}
+}
+@media screen and (min-width:48rem){.careers-remote-copy{padding:0}
+}
+.careers-table{overflow:hidden;background-color:#f5f5f5;padding-bottom:3rem}
+.careers-table h3{margin:0}
+.careers-table .o-content-container{padding:0}
+.careers-table .shadow-table{box-shadow:0 0 2rem rgba(0,0,0,.1)}
+.careers-table__heading{position:relative;z-index:1;background-color:#f5f5f5}
+.careers-title{font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:700;line-height:1.28571429;letter-spacing:normal;font-size:.875rem;color:#611f69;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-title{font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-title{font-size:.875rem}
+}
+.careers-title:lang(ja){font-family:Slack-Tazugane,Tahoma,Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:700;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-title:lang(ja){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-title:lang(ja){font-size:.875rem}
+}
+.careers-title:lang(de){@display-as-jumbo :            @font-family-display , 2.1875    , 3.    , 1.055555556 , @font-bold    , -1.5px;font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:700;line-height:1.28571429;letter-spacing:normal;font-size:.875rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-title:lang(de){font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-title:lang(de){font-size:.875rem}
+}
+.careers-title:lang(ko){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:700;line-height:1.5;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-title:lang(ko){font-size:calc(1rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-title:lang(ko){font-size:1rem}
+}
+.careers-title:lang(zh){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:700;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-title:lang(zh){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-title:lang(zh){font-size:.875rem}
+}
+.careers-title:lang(ru){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:700;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-title:lang(ru){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-title:lang(ru){font-size:.875rem}
+}
+.careers-location{font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.28571429;letter-spacing:normal;font-size:.875rem;color:#454545;margin:0}
+@media screen and (min-width:25rem){.careers-location{font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-location{font-size:.875rem}
+}
+.careers-location:lang(ja){font-family:Slack-Tazugane,Tahoma,Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-location:lang(ja){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-location:lang(ja){font-size:.875rem}
+}
+.careers-location:lang(de){@display-as-jumbo :            @font-family-display , 2.1875    , 3.    , 1.055555556 , @font-bold    , -1.5px;font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.42857143;letter-spacing:normal;font-size:.875rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-location:lang(de){font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-location:lang(de){font-size:.875rem}
+}
+.careers-location:lang(ko){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-location:lang(ko){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-location:lang(ko){font-size:.875rem}
+}
+.careers-location:lang(zh){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-location:lang(zh){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-location:lang(zh){font-size:.875rem}
+}
+.careers-location:lang(ru){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.careers-location:lang(ru){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.careers-location:lang(ru){font-size:.875rem}
+}
+.values-emoji{height:1.2rem;vertical-align:text-bottom}
+.c-feature-grid{padding:0}
+.c-feature-grid__item{padding-left:0;padding-right:0}
+@media screen and (min-width:48rem){.c-feature-grid__item{padding:1rem}
+}
+.core-values-image{align-self:center;justify-self:center}

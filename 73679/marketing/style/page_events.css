@@ -1,0 +1,54 @@
+.events-hero .c-billboard__header__headline{width:90%;margin-left:0}
+@media screen and (max-width:48rem){.events-hero .c-billboard__header__headline{font-size:2.5rem}
+}
+a{font-size:inherit;transition:inherit;color:#1264a3;margin-top:.15rem;padding-bottom:.075em}
+a:hover{color:#1264a3;text-decoration:none}
+.events-wrap{font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-variant-ligatures:common-ligatures;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:1.125rem;line-height:1}
+@media screen and (max-width:64rem){.events-wrap{padding:0 2.5rem}
+}
+@media screen and (max-width:30rem){.events-wrap{padding:0 1rem}
+}
+.events-wrap section{position:relative;padding:2rem 0 4rem}
+.events-wrap section.tier.using-slack{text-align:center;margin-bottom:5rem}
+.events-wrap section.tier.using-slack .description{max-width:none}
+@media screen and (max-width:30rem){.events-wrap section.tier.using-slack{margin-bottom:2.5rem}
+}
+.events-wrap section .section_main{width:100%;max-width:1040px;z-index:1;margin:0 auto;overflow:hidden}
+.events-wrap section .section_main .description{max-width:30rem}
+.events-wrap section .section_main h2.sub-head{font-size:2rem;line-height:36px;margin:0 0 1rem;color:#000}
+@media screen and (max-width:30rem){.events-wrap section .section_main .description{max-width:100%}
+.events-wrap section .section_main h2.sub-head{font-size:1.75rem}
+}
+.events-wrap section .event_list{padding:2.5rem 0 2rem;color:#000}
+.events-wrap section .event_list .event_item{display:flex;padding:2rem 0;border-bottom:1px solid #ebeaeb;overflow:hidden;align-items:flex-start;flex-direction:row}
+@media screen and (max-width:48rem){.events-wrap section .event_list .event_item{align-items:flex-start}
+}
+.events-wrap section .event_list .event_item a,.events-wrap section .event_list .event_item button,.events-wrap section .event_list .event_item span{vertical-align:baseline;vertical-align:-webkit-baseline-middle;line-height:1.5}
+.events-wrap section .event_list .event_item a{border-bottom:none;font-weight:600;font-size:.875rem;position:relative;display:flex;align-items:center;flex-basis:25%;justify-content:flex-end;letter-spacing:.05rem}
+.events-wrap section .event_list .event_item a:after{content:"";display:inline-block;width:1.25rem;height:1rem;margin-left:.5625rem;background-size:100%;background-repeat:no-repeat;background-position:center .15rem;background-image:url(data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D%220%200%2025%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20stroke%3D%22%231264A3%22%20stroke-width%3D%222%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M1.548%207h21.904%22%2F%3E%3Cpath%20stroke-linejoin%3D%22round%22%20d%3D%22M17%201l7%206-7%206%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E)}
+.events-wrap section .event_list .event_item .coming-soon{color:#696969;font-size:.875rem;font-weight:600;margin-top:.5rem;display:flex;flex-basis:25%;justify-content:flex-end;cursor:default}
+.events-wrap section .event_list .event_item .event_name{flex-basis:50%;padding-right:1.5rem}
+.events-wrap section .event_list .event_item .event_name span{display:inline-block;max-width:90%;margin:0;color:#000;font-weight:700;font-size:inherit}
+@media screen and (max-width:64rem){.events-wrap section .event_list .event_item .event_name{padding-right:1.75rem}
+}
+@media screen and (max-width:48rem){.events-wrap section .event_list .event_item .event_name{padding-right:1rem;flex-basis:45%}
+}
+.events-wrap section .event_list .event_item .event_deets{display:flex;flex-basis:52%;font-size:inherit}
+.events-wrap section .event_list .event_item .event_deets span{vertical-align:baseline;vertical-align:-webkit-baseline-middle}
+@media screen and (max-width:48rem){.events-wrap section .event_list .event_item .event_deets{flex-direction:column;flex-basis:40%;justify-content:space-between;height:3rem}
+}
+.events-wrap section .event_list .event_item .event_deets:lang(es),.events-wrap section .event_list .event_item .event_deets:lang(fr),.events-wrap section .event_list .event_item .event_deets:lang(ja),.events-wrap section .event_list .event_item .event_deets:lang(pt){flex-direction:column;flex-basis:50%;justify-content:space-between;height:3.25rem}
+.events-wrap section .event_list .event_item .event_deets:lang(ja){flex-basis:40%}
+.events-wrap section .event_list .event_item .event_deets .event_date{flex-basis:55%}
+@media screen and (max-width:64rem){.events-wrap section .event_list .event_item .event_deets .event_date{flex-basis:65%;padding-right:1rem}
+}
+@media screen and (max-width:48rem){.events-wrap section .event_list .event_item .event_deets .event_date{flex-basis:100%}
+}
+.events-wrap section .event_list .event_item .event_deets .event_loc{flex-basis:45%}
+.events-wrap section .event_list .event_item:not(.comingsoon):hover .event_deets,.events-wrap section .event_list .event_item:not(.comingsoon):hover .event_name span{color:#1264a3}
+@media screen and (max-width:48rem){.events-wrap section .event_list .event_item .coming-soon,.events-wrap section .event_list .event_item a{flex-basis:25%}
+}
+@media screen and (max-width:30rem){.events-wrap section .event_list .event_item{flex-direction:column;align-items:flex-start;font-size:1.125rem;line-height:1.75}
+.events-wrap section .event_list .event_item .coming-soon,.events-wrap section .event_list .event_item a{font-size:.875rem;margin-top:1rem}
+.events-wrap section .event_list .event_item .event_name p{font-size:inherit;margin-bottom:1rem}
+}

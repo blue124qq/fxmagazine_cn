@@ -1,0 +1,74 @@
+.m-square-list{list-style:none;margin-left:0;padding-left:0}
+.m-square-list>li:not(.c-stat){padding-left:30px}
+.m-square-list>li:not(.c-stat):before{font-family:arial,helvetica,sans-serif;position:relative;float:left;color:var(--theme-bullet-color);text-indent:-30px;speak:none;content:'\25A0';top:-3px}
+.c-stat__number:lang(ko){font-size:calc(2rem + (40 * (100vw - 400px)/ 624))}
+@media (min-width:600px){.c-stat__number:lang(ja){font-size:3.8rem}
+.c-stat__number:lang(ko){font-size:2.8rem}
+}
+@media (min-width:920px){.c-stat__number:lang(ja){font-size:4.3rem}
+.c-stat__number:lang(ko){font-size:3.3rem}
+}
+@supports not ((display:grid) and (grid-column-gap:1%)){@media screen and (min-width:48rem){.c-feature-grid.v--four{display:flex}
+}
+}
+@media screen and (min-width:48rem) and (-ms-high-contrast:none),(-ms-high-contrast:active){.c-feature-grid.v--four{display:flex}
+}
+@supports (display:grid) and (grid-template-columns:repeat(3,1fr)) and (grid-row-gap:1%) and (grid-gap:1%) and (grid-column-gap:1%){@media screen and (min-width:48rem){.c-feature-grid.v--four{display:grid;grid-template-columns:repeat(4,auto)}
+}
+}
+.c-logo-list .logo-panasonic{order:1}
+.c-logo-list .logo-fox{order:2}
+.c-logo-list .logo-starbucks{order:3}
+.c-logo-list .logo-target{order:4}
+.c-logo-list .logo-ameritrade{order:5}
+.c-logo-list .logo-bbc{order:6}
+.c-logo-list .logo-oracle{order:7}
+.c-logo-list .logo-nikkei{order:8}
+.c-logo-list .logo-sap{order:9}
+.c-logo-list .logo-mit{order:10}
+.c-logo-list .logo-nordstrom{order:11}
+.c-logo-list .logo-nytimes{order:12}
+.c-logo-list .logo-etrade{order:13}
+.blob_left{position:relative}
+.blob_left:before{content:'';display:block;position:absolute;background-repeat:no-repeat;width:170px;height:203px;background-size:170px 203px;background-image:url(../../../80588/spacesuit/source/images/tracks/tracks-2.png);z-index:-1}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.blob_left:before{background-image:url(../../../80588/spacesuit/source/images/tracks/tracks-2@2x.png)}
+}
+@media screen and (max-width:767px){.c-logo-list>img{margin:1.5rem auto}
+.c-logo-list .logo-panasonic{order:1}
+.c-logo-list .logo-fox{order:2}
+.c-logo-list .logo-bbc{order:3}
+.c-logo-list .logo-ameritrade{order:4}
+.c-logo-list .logo-nikkei{order:5}
+.c-logo-list .logo-target{order:6}
+.c-logo-list .logo-etrade{order:7}
+.c-logo-list .logo-oracle{order:8}
+.c-logo-list .logo-nordstrom{order:9}
+.c-logo-list .logo-starbucks{order:10}
+.c-logo-list .logo-mit{order:11}
+.c-logo-list .logo-sap{order:12}
+.c-logo-list .logo-nytimes{order:13}
+.blob_left:before{display:none}
+}
+.halftone_right{position:relative}
+.halftone_right:before{content:'';display:block;position:absolute;background-repeat:no-repeat;width:210px;height:186px;background-size:210px 186px;background-image:url(../../../80588/spacesuit/source/images/halftones/halftone-3-smaller.png);z-index:-1}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.halftone_right:before{background-image:url(../../../80588/spacesuit/source/images/halftones/halftone-3-smaller@2x.png)}
+}
+@media screen and (max-width:767px){.halftone_right:before{display:none}
+}
+@media screen and (min-width:48rem) and (max-width:1023px){.c-logo-list>img{margin:1.5rem 1rem}
+.blob_left:before{top:-6rem;left:-6rem}
+.halftone_right:before{bottom:-4rem;right:-4rem}
+.o-hero{padding:12rem 0 5rem}
+.v--news-container .o-section--feature__copy,.v--news-container .o-section--feature__headline{text-align:center}
+.v--news-container .o-block-grid{grid-template-columns:repeat(2,285px);justify-content:center}
+}
+@media screen and (min-width:64rem){.c-logo-list>img{margin:1.5rem 2rem}
+.blob_left:before{top:-5rem;left:-5rem}
+.halftone_right:before{bottom:-3.75rem;right:-10rem}
+}
+@media screen and (min-width:0) and (max-width:1279px){.o-block-grid.v--four>:nth-child(odd).c-promo{margin-left:auto;min-width:285px}
+}
+@media screen and (min-width:64rem){.o-hero{padding-top:15rem;padding-bottom:10rem}
+.o-section__illustration{margin:0 auto}
+.c-logo-list{margin:auto 4rem}
+}

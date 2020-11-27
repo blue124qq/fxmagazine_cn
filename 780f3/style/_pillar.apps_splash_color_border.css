@@ -1,0 +1,7 @@
+.splash_color_border{display:flex;width:100%;min-width:992px;position:relative}
+.splash_color_border_cell{height:3px;flex:1}
+.splash_color_border_cell--yellow{background-color:#de4e2b}
+.splash_color_border_cell--purple{background-color:#4a154b}
+.splash_color_border_cell--red{background-color:#e01e5a}
+.splash_color_border_cell--green{background-color:#007a5a}
+.splash_color_border_cell--blue{background-color:#1d9bd1}

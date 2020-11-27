@@ -1,0 +1,130 @@
+.m-square-list{list-style:none;margin-left:0;padding-left:0}
+.m-square-list>li:not(.c-stat){padding-left:30px}
+.m-square-list>li:not(.c-stat):before{font-family:arial,helvetica,sans-serif;position:relative;float:left;color:var(--theme-bullet-color);text-indent:-30px;speak:none;content:'\25A0';top:-3px}
+.bg-hero{display:flex;align-items:flex-end;margin-bottom:-2.3rem}
+figcaption{display:none;text-align:center}
+.security-logos{display:flex;justify-content:center}
+.security-point-logos{position:relative}
+.security-point-logos--updated{margin-top:2rem}
+.security-point-logo img{max-width:120px}
+.security-point-logo--updated{text-align:left}
+.security-point-logo--updated a{font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.28571429;letter-spacing:normal;font-size:.875rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-logo--updated a{font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-logo--updated a{font-size:.875rem}
+}
+.security-point-logo--updated a:lang(ja){font-family:Slack-Tazugane,Tahoma,Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-logo--updated a:lang(ja){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-logo--updated a:lang(ja){font-size:.875rem}
+}
+.security-point-logo--updated a:lang(de){@display-as-jumbo :            @font-family-display , 2.1875    , 3.    , 1.055555556 , @font-bold    , -1.5px;font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.42857143;letter-spacing:normal;font-size:.875rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-logo--updated a:lang(de){font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-logo--updated a:lang(de){font-size:.875rem}
+}
+.security-point-logo--updated a:lang(ko){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-logo--updated a:lang(ko){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-logo--updated a:lang(ko){font-size:.875rem}
+}
+.security-point-logo--updated a:lang(zh){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-logo--updated a:lang(zh){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-logo--updated a:lang(zh){font-size:.875rem}
+}
+.security-point-logo--updated a:lang(ru){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-logo--updated a:lang(ru){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-logo--updated a:lang(ru){font-size:.875rem}
+}
+.security-point-copy{padding-top:1rem}
+.security-point-copy--updated{color:#454545}
+.security-point-heading{font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.28571429;letter-spacing:normal;font-size:.875rem;color:#1d1d1d}
+@media screen and (min-width:25rem){.security-point-heading{font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-heading{font-size:.875rem}
+}
+.security-point-heading:lang(ja){font-family:Slack-Tazugane,Tahoma,Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.2;letter-spacing:normal;font-size:1rem}
+@media screen and (min-width:25rem){.security-point-heading:lang(ja){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-heading:lang(ja){font-size:.875rem}
+}
+.security-point-heading:lang(de){@display-as-jumbo :            @font-family-display , 2.1875    , 3.    , 1.055555556 , @font-bold    , -1.5px;font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.28571429;letter-spacing:normal;font-size:.875rem}
+@media screen and (min-width:25rem){.security-point-heading:lang(de){font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-heading:lang(de){font-size:.875rem}
+}
+.security-point-heading:lang(ko){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;line-height:1.5;letter-spacing:normal;font-size:1rem}
+@media screen and (min-width:25rem){.security-point-heading:lang(ko){font-size:calc(1rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-heading:lang(ko){font-size:1rem}
+}
+.security-point-heading:lang(zh){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:700;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-heading:lang(zh){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-heading:lang(zh){font-size:.875rem}
+}
+.security-point-heading:lang(ru){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:700;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-heading:lang(ru){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-heading:lang(ru){font-size:.875rem}
+}
+.security-point-heading,.security-point-heading:lang(de),.security-point-heading:lang(ja),.security-point-heading:lang(ko){font-weight:700;margin-bottom:.5rem}
+.security-point-subheading{font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.28571429;letter-spacing:normal;font-size:.875rem}
+@media screen and (min-width:25rem){.security-point-subheading{font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-subheading{font-size:.875rem}
+}
+.security-point-subheading:lang(ja){font-family:Slack-Tazugane,Tahoma,Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem}
+@media screen and (min-width:25rem){.security-point-subheading:lang(ja){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-subheading:lang(ja){font-size:.875rem}
+}
+.security-point-subheading:lang(de){@display-as-jumbo :            @font-family-display , 2.1875    , 3.    , 1.055555556 , @font-bold    , -1.5px;font-family:Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;font-weight:400;line-height:1.42857143;letter-spacing:normal;font-size:.875rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-subheading:lang(de){font-size:calc(.875rem + (0 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-subheading:lang(de){font-size:.875rem}
+}
+.security-point-subheading:lang(ko){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem}
+@media screen and (min-width:25rem){.security-point-subheading:lang(ko){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-subheading:lang(ko){font-size:.875rem}
+}
+.security-point-subheading:lang(zh){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-subheading:lang(zh){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+@media screen and (min-width:64rem){.security-point-subheading:lang(zh){font-size:.875rem}
+}
+.security-point-subheading:lang(ru){font-family:NotoSansKR,Slack-Lato,appleLogo,sans-serif;font-weight:400;line-height:1.2;letter-spacing:normal;font-size:1rem;margin-bottom:1rem}
+@media screen and (min-width:25rem){.security-point-subheading:lang(ru){font-size:calc(1rem + (-2 * (100vw - 400px)/ 624))}
+}
+.security-point-subheading,.security-point-subheading:lang(de),.security-point-subheading:lang(ja),.security-point-subheading:lang(ko){margin-bottom:.5rem}
+.overflow_container{display:inline-block;padding:2rem;background-color:#fff;box-shadow:0 0 2rem rgba(0,0,0,.1);width:100%;position:relative;top:0;margin-top:-13rem}
+.overflow_sibling{padding-top:21rem}
+.c-feature-grid{margin-bottom:0}
+.c-feature-grid.v--three.downloadable-content .c-feature-grid__item:not(:last-child){border-bottom:1px solid #ebeaeb;margin-bottom:1rem}
+@media screen and (min-width:48rem){.c-feature-grid.v--three.downloadable-content .c-feature-grid__item:not(:last-child){border-bottom:0;margin-bottom:0}
+}
+.c-feature-grid.v--checkmark .c-feature-grid__item,.c-feature-grid.v--checkmark-after .c-feature-grid__item{padding-top:1.8rem;padding-bottom:1.8rem}
+.c-feature-grid.v--checkmark .c-feature-grid__item:first-child,.c-feature-grid.v--checkmark-after .c-feature-grid__item:first-child{padding-top:1rem}
+.c-feature-grid.v--checkmark .c-feature-grid__item:last-child,.c-feature-grid.v--checkmark-after .c-feature-grid__item:last-child{padding-bottom:1rem}
+.c-feature-grid.v--checkmark-after .c-feature-grid__item:after{top:50%;transform:translateY(-50%)}
+.c-shadowbox .o-content-block{justify-content:flex-start}
+.c-feature-grid__item__copy.v--constrained{max-width:100%}
+@media screen and (min-width:60rem){.c-feature-grid__item__copy.v--constrained{max-width:70%}
+}
+.c-logowall__item{display:block!important;align-items:center;justify-content:center}
+.security-footer-cta{max-width:500px;margin:0 auto}
+.security-point-heading--eu{margin-bottom:.2rem}
+.o-hero__illustration{margin:3rem auto 0}
+.security-point-logo--fedramp img,.security-point-logo--iso img{max-width:67px}
+@media screen and (min-width:64rem){.security-point-subheading:lang(ru){font-size:.875rem}
+.o-section--security-updated h2{max-width:44rem;margin:0 auto}
+.o-section--security-updated h3{margin:0 auto}
+}
+.o-section--security-updated h3{max-width:40rem}
+@media screen and (min-width:0) and (max-width:1023px){.o-section--security-updated p.v--with-arrow-link{width:300px}
+}
+.security-updated-divider{background-color:#f5f5f5}
+.security-updated-divider hr{max-width:1280px;margin:0 auto;color:#696969;background-color:rgba(105,105,105,.3)}

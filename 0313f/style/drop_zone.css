@@ -1,0 +1,21 @@
+@font-face{font-family:appleLogo;src:local("Lucida Grande");unicode-range:U+F8FF}
+.drop_zone{text-align:center;border-radius:.25rem;border:2px dashed #868686;color:#616061;min-height:6rem;line-height:100%;font-size:1.25rem;position:relative}
+.drop_zone.dragover:not(.disabled){border-color:#007a5a}
+.drop_zone_text{color:#616061;font-size:1.25rem;margin:2rem}
+.drop_zone_overlay_text_inline{font-size:24px}
+.drop_zone_overlay{background:rgba(255,255,255,.9);position:absolute;top:0;bottom:0;left:0;right:0;font-size:2rem;z-index:1100}
+.drop_zone_overlay .drop_zone_overlay_inner{position:absolute;text-align:center;top:50%;transform:translateY(-50%);width:100%}
+.drop_zone_overlay .drop_zone_overlay_inner .drop_zone_block{display:inline-block}
+.drop_zone_overlay .drop_zone_overlay_inner .drop_zone_progress,.drop_zone_overlay .drop_zone_overlay_inner .drop_zone_upload_icon{margin-right:12px;width:auto}
+.drop_zone_overlay .drop_zone_overlay_inner .drop_zone_upload_icon_small{max-height:64px}
+.drop_zone_overlay.drop_zone_fullscreen{position:fixed}
+.drop_zone_overlay.drop_zone_fullscreen .drop_zone_overlay_inner .drop_zone_block{margin-left:auto;margin-right:auto;display:block}
+.drop_zone_overlay.drop_zone_fullscreen .drop_zone_overlay_inner .drop_zone_progress,.drop_zone_overlay.drop_zone_fullscreen .drop_zone_overlay_inner .drop_zone_upload_icon{max-height:none;margin-bottom:.5em}
+.drop_zone_attachment{position:relative}
+.drop_zone_attachment:hover .drop_zone_remove_attachment{display:block}
+.drop_zone_attachment .drop_zone_remove_attachment{color:#616061;display:none;position:absolute;top:.25em;right:.25em}
+.drop_zone_attachment .drop_zone_remove_attachment:hover{color:#e01e5a}
+.drop_zone_mask{position:absolute;top:-2px;bottom:-2px;left:-2px;right:-2px;z-index:1101}
+.drop_zone_mask.drop_zone_fullscreen{position:fixed}
+[data-drop-zone-input]{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+[data-drop-zone-trigger]{cursor:pointer}

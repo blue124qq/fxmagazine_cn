@@ -1,0 +1,132 @@
+.splash_container{position:relative}
+.splash_container__background{position:absolute;width:100%;height:100%;display:flex;justify-content:space-between;z-index:-1;background-color:#fff}
+.splash_container__background--left{background:url(../../80588/img/apps/background_left.png) right no-repeat;height:100%;width:200px}
+@media screen and (max-width:960px){.splash_container__background--left{background:url(../../80588/img/apps/background_tablet_left.png) right no-repeat;float:left}
+}
+@media screen and (max-width:640px){.splash_container__background--left{background:0 0}
+}
+.splash_container__background--center{height:100%;width:1104px;min-width:1104px}
+@media screen and (max-width:960px){.splash_container__background--center{min-width:0;width:0}
+.splash_container__background--right{background:url(../../80588/img/apps/background_tablet_right.png) bottom right no-repeat;float:right}
+}
+.splash_container__background--right{height:100%;width:200px}
+.splash_container__background_image{height:100%}
+.splash_wrapper{width:1024px;margin:70px auto 50px;padding:4rem 2rem 0;display:flex;justify-content:space-between}
+@media screen and (max-width:960px){.splash_wrapper{width:100%;padding:0;margin:100px auto 60px}
+}
+.splash_text{max-width:440px;padding-left:9px;display:flex;flex-direction:column;height:100%;color:#1d1c1d}
+@media screen and (max-width:960px){.splash_text{text-align:center;margin:0 auto;justify-content:center}
+}
+.splash_text__title{font-size:38px;font-weight:900;margin-bottom:.75rem}
+@media screen and (max-width:640px){.splash_container__background--right{background:url(../../80588/img/apps/background_mobile_right.png) bottom right no-repeat}
+.splash_text__title{font-size:28px;line-height:34px}
+}
+.splash_text__description{font-weight:500;font-size:22px;margin-bottom:1.25rem}
+@media screen and (max-width:640px){.splash_text__description{font-size:15px;line-height:20px;max-width:300px;margin:0 auto 1.25rem}
+}
+.splash_text__button{font-size:17px;height:44px;line-height:25px}
+.splash_interactive{display:flex}
+@media screen and (max-width:960px){.splash_text__button{margin:0 auto}
+.splash_interactive{display:none}
+}
+.splash_interactive__buttons{display:flex;flex-direction:column;margin-right:25px}
+.splash_interactive__button{height:50px;width:50px;border-radius:6px;border:1px solid #ddd;margin-bottom:20px;cursor:pointer;transform:scale(1);transition:all .2s ease;background-size:contain}
+.splash_interactive__button--drive{background-image:url(../../80588/img/apps/icon_drive@2x.png)}
+.splash_interactive__button--zoom{background-image:url(../../80588/img/apps/icon_zoom@2x.png)}
+.splash_interactive__button--jira{background-image:url(../../80588/img/apps/icon_jira@2x.png)}
+.splash_interactive__button--salesforce{background-image:url(../../80588/img/apps/icon_salesforce@2x.png)}
+.splash_interactive__button--active{transform:scale(1.1);transform-origin:center;box-shadow:0 0 10px 1px #ddd}
+.splash_interactive__window{width:400px;border-radius:6px;border:1px solid #ddd;height:267px;position:relative;padding:20px 25px;z-index:1;background-color:#fff;transition:box-shadow .3s ease}
+.splash_interactive__window:before{content:'';display:block;height:86px;width:91px;position:absolute;right:-72px;top:156px;background:url(../../80588/img/apps/background_squares@2x.png) no-repeat;background-size:contain}
+.splash_interactive__window:hover{cursor:pointer}
+.splash_interactive__window:hover .splash_interactive__window_headline{color:#017ab8}
+.splash_interactive__window:after{content:'';display:block;position:absolute;height:275px;width:400px;left:-1px;top:0;z-index:-1;background:linear-gradient(to bottom,rgba(255,255,255,0) 0,#fff 100%)}
+.splash_interactive__window_headline{font-size:18px;margin-bottom:15px;font-weight:700}
+.splash_interactive__window_link{display:none}
+.splash_interactive__window_link.is-visible{display:block}
+.splash_interactive__window_link.is-visible .splash_interactive__window_content_container{opacity:1;animation-name:x-app_directory_landing_splash_primer--fade_in;animation-iteration-count:1;animation-timing-function:ease-in;animation-duration:.4s}
+a.splash_interactive__window_link{color:#1d1c1d}
+a.splash_interactive__window_link:hover{text-decoration:none}
+.splash_interactive__window_message{display:flex;margin-bottom:10px;font-size:15px;opacity:0;position:relative;top:30px}
+.splash_interactive__window_message--show{animation:.3s ease .5s forwards x-app_directory_landing_splash_primer--slide-up}
+.splash_interactive__window_message_content_username{font-weight:900;line-height:15px}
+.splash_interactive__window_message_image{height:40px;width:40px;margin-right:10px;background-size:cover;background-repeat:no-repeat;flex-shrink:0}
+.splash_interactive__window_message_content_text{border-right:1px solid transparent;line-height:20px;margin-top:4px;overflow:hidden;white-space:nowrap;width:100%}
+.splash_interactive__window_message_content_text--drive{color:#868686}
+.splash_interactive__window_message_content_text_icon{display:none}
+.splash_interactive__window_message_content_text--drive .splash_interactive__window_message_content_text_icon{display:inline-block}
+.is-typing .splash_interactive__window_message_content_text{animation:x-app_directory_landing_splash_primer--type-text 1.5s steps(20,end) .5s forwards,x-app_directory_landing_splash_primer--blink-caret .75s step-end infinite;animation-delay:.5s}
+.splash_interactive__window_response{height:auto;width:320px;margin-left:2px;opacity:0;position:relative;top:30px}
+.splash_interactive__window_response--show{animation:.3s ease 2.3s forwards x-app_directory_landing_splash_primer--slide-up}
+.slide-drive .splash_interactive__window_response--show{animation:.3s ease 1s forwards x-app_directory_landing_splash_primer--slide-up}
+@keyframes x-app_directory_landing_splash_primer--slide-up{0%{opacity:0;top:30px}
+100%{opacity:1;top:0}
+}
+@keyframes x-app_directory_landing_splash_primer--type-text{0%{width:0}
+100%{width:100%}
+}
+@keyframes x-app_directory_landing_splash_primer--blink-caret{0%,100%{border-color:transparent}
+50%{border-color:#616061}
+}
+@keyframes x-app_directory_landing_splash_primer--fade_in{0%{opacity:0}
+100%{opacity:1}
+}
+.splash_color_border_cell--yellow{background-color:#de4e2b}
+.splash_color_border_cell--purple{background-color:#71105f}
+.splash_color_border_cell--red{background-color:#e01e5a}
+.splash_color_border_cell--green{background-color:#007a5a}
+.splash_color_border_cell--blue{background-color:#7fd1e0}
+.purple_banner{z-index:2200;height:auto;width:100%;background-color:#573d82;position:fixed;bottom:0;left:0;color:#fff;text-align:center;transition:bottom .2s ease;display:flex}
+.purple_banner__content{width:100%}
+.purple_banner .first_row{display:inline-block;line-height:84px}
+@media screen and (max-width:1100px){.purple_banner .first_row{display:block;line-height:normal;padding:20px 70px}
+}
+@media screen and (max-width:680px){.purple_banner .first_row{line-height:normal;text-align:left;padding:20px 40px}
+}
+.purple_banner .second_row{display:inline-block;line-height:84px}
+@media screen and (max-width:1100px){.purple_banner .second_row{display:block;line-height:normal}
+}
+.purple_banner span{color:rgba(255,255,255,.8)}
+@media screen and (max-width:480px){.purple_banner span{display:block;margin-bottom:18px;padding-right:20px}
+}
+.purple_banner i.wave{display:inline-block;content:'';width:20px;height:20px;background-image:url(../../80588/img/emoji_2017_12_06/apple/1f44b.png);background-size:20px 20px;background-position:top left;vertical-align:text-bottom;transition-propery:all;transition-duration:.3s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out}
+.purple_banner i.wave.rotated{-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-ms-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);transform-origin:16px 19px}
+.purple_banner .btn{font-size:1rem;font-weight:700;margin-left:15px;background:0 0;color:rgba(255,255,255,.8);border:2px solid rgba(255,255,255,.8);display:inline-block;border-radius:6px;padding:8px 14px 9px;margin-bottom:20px}
+.purple_banner .btn:hover{color:#573d82;border-color:#fff;background-color:#fff;box-shadow:none!important;text-shadow:none!important}
+@media screen and (max-width:480px){.purple_banner .btn{line-height:1.5rem}
+.purple_banner .btn:nth-child(1){margin-left:0}
+}
+.purple_banner .close_purple{cursor:pointer;position:absolute;top:14px;right:0;background:0 0;border:none}
+.purple_banner .close_purple:before{color:rgba(255,255,255,.8);font-size:28px}
+@media screen and (min-width:680px){.purple_banner .close_purple{margin-left:auto;position:relative;top:auto;right:auto}
+}
+.spec_banner{align-items:center;background-color:#000;bottom:0;color:#fff;display:flex;font-size:1.1em;height:auto;left:0;padding:1em 1.5em;position:fixed;transition:bottom .2s ease;width:100%;z-index:1040}
+@media only screen and (min-width:640px){.spec_banner{justify-content:center}
+}
+@media only screen and (min-width:1024px){.spec_banner{font-size:1.2em}
+}
+.spec_banner .spec_banner__content{align-items:flex-start;display:flex;flex-flow:column nowrap;flex-grow:1;margin-right:1.2em}
+@media only screen and (min-width:640px){.spec_banner .spec_banner__content{align-items:center;flex-flow:row nowrap;flex-grow:0}
+}
+.spec_banner .close_spec{background:0 0;border:none;cursor:pointer;margin-right:-.6em;padding:0}
+.spec_banner .close_spec:before{color:#fff;font-size:28px}
+.spec_banner .first_row{display:flex;flex-flow:row nowrap}
+@media only screen and (min-width:640px){.spec_banner .first_row{align-items:center}
+}
+.spec_banner .first_row i{background-position:center;background-repeat:no-repeat;background-size:contain;content:'';flex-shrink:0;height:36px;margin:.3em .5em 0 0;transition-duration:.3s;transition-property:all;transition-timing-function:ease-in-out;vertical-align:middle;width:36px}
+.spec_banner .first_row i.wave{background-image:url(../../80588/img/api/spec_logo@2x.png)}
+.spec_banner .first_row i.frontiers{background-image:url(../../80588/img/api/frontiers-white-34.png)}
+.spec_banner .first_row i.banner_ts_icon::before{font-family:Slack;font-size:36px;font-style:normal;font-weight:400;display:inline-block}
+.spec_banner .first_row i.rotated{-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-ms-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);transform-origin:16px 19px}
+@media only screen and (min-width:640px){.spec_banner .first_row i{margin-top:0}
+}
+.spec_banner .first_row .text>b{display:block}
+@media only screen and (min-width:1024px){.spec_banner .first_row .text>b{margin-right:.2em}
+.spec_banner .first_row .text{display:flex;flex-flow:row wrap}
+}
+.spec_banner .second_row{margin:.5em 0 0 .5em;padding-left:36px}
+@media only screen and (min-width:640px){.spec_banner .second_row{margin:0 0 0 1.5em;padding-left:0}
+.spec_banner .btn{line-height:1.5rem}
+}
+.spec_banner .btn{font-size:1rem;font-weight:700;background:0 0;color:#fff;border:2px solid #fff;display:inline-block;border-radius:6px;padding:8px 14px 9px;text-transform:uppercase}
+.spec_banner .btn:hover{color:#000;border-color:#fff;background-color:#fff;box-shadow:none!important;text-shadow:none!important}

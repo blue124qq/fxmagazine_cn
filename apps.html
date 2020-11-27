@@ -1,0 +1,429 @@
+<!DOCTYPE html><html lang="en-GB" class="" data-primer=""><head>
+    <meta charset="utf-8"><script src="v1/companies/reveal-reveal_pk_7144fadb90a8fdd.js"></script><script>
+if (window.reveal && window.reveal.company) {
+	var r = window.reveal;
+	window.clearbit_fmt = {
+		cb_traffic_type: r.type,
+		cb_company_name: r.company.name,
+		cb_industry_tags: r.company.tags.join(', '),
+		cb_industry_sector: r.company.category.sector,
+		cb_industry_group:  r.company.category.industryGroup,
+		cb_industry_name: r.company.category.industry,
+		cb_industry_sub: r.company.category.subIndustry,
+		cb_company_city: r.company.geo.city,
+		cb_company_state:r.company.geo.state,
+		cb_company_country: r.company.geo.country,
+		cb_alexa_us: r.company.metrics.alexaUsRank,
+		cb_alexa_global: r.company.metrics.alexaGlobalRank,
+		cb_size_employees: r.company.metrics.employees,
+		cb_size_range: r.company.metrics.employeesRange,
+		cb_size_annual_revenue: r.company.metrics.annualRevenue,
+		cb_size_est_revenue: r.company.metrics.estimatedAnnualRevenue,
+	}
+}
+
+window.optimizely_fmt = {
+	"type": "user",
+	"attributes": {
+		"visitor_uid" : "dgttu9z3ehhr0z640xcdj2dzw",
+		"visitor_type": "prospect",
+		"is_first_visit": true,
+		"traffic_type": "logged_out",	}
+}
+window.drift_fmt = {
+	"visitor_type": "prospect",
+	"is_first_visit": true,
+	"traffic_type": "logged_out",
+	"is_paid_plan": false,
+	"is_free_plan": false,
+	"is_ent_plan": false,
+}
+if (window.drift) {
+	window.drift.on('ready', function() {
+		window.drift.api.setUserAttributes(window.drift_fmt);
+	});
+}
+if (window.reveal && window.reveal.company) {
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push(window.clearbit_fmt);
+	window.dataLayer.push({event: 'Clearbit'});
+}
+if (window.reveal && window.reveal.company) {
+	for (var p in window.clearbit_fmt) {
+		if (window.clearbit_fmt.hasOwnProperty(p)) {
+			window.optimizely_fmt.attributes[p] = window.clearbit_fmt[p];
+		}
+	}
+}
+window.optimizely = window.optimizely || [];
+if (!window.OnetrustActiveGroups || window.OnetrustActiveGroups.includes('C0003')) {
+window.optimizely.push({'type':'optOut','isOptOut':false});
+window.optimizely.push(window.optimizely_fmt);
+} else {
+window.optimizely.push({'type':'optOut','isOptOut':true});
+}
+</script><script src="js/13778740109.js"></script><script>window.ts_endpoint_url = "https:\/\/fxmagazine.cn\/beacon\/timing";(function(e) {
+	var n=Date.now?Date.now():+new Date,r=e.performance||{},t=[],a={},i=function(e,n){for(var r=0,a=t.length,i=[];a>r;r++)t[r][e]==n&&i.push(t[r]);return i},o=function(e,n){for(var r,a=t.length;a--;)r=t[a],r.entryType!=e||void 0!==n&&r.name!=n||t.splice(a,1)};r.now||(r.now=r.webkitNow||r.mozNow||r.msNow||function(){return(Date.now?Date.now():+new Date)-n}),r.mark||(r.mark=r.webkitMark||function(e){var n={name:e,entryType:"mark",startTime:r.now(),duration:0};t.push(n),a[e]=n}),r.measure||(r.measure=r.webkitMeasure||function(e,n,r){n=a[n].startTime,r=a[r].startTime,t.push({name:e,entryType:"measure",startTime:n,duration:r-n})}),r.getEntriesByType||(r.getEntriesByType=r.webkitGetEntriesByType||function(e){return i("entryType",e)}),r.getEntriesByName||(r.getEntriesByName=r.webkitGetEntriesByName||function(e){return i("name",e)}),r.clearMarks||(r.clearMarks=r.webkitClearMarks||function(e){o("mark",e)}),r.clearMeasures||(r.clearMeasures=r.webkitClearMeasures||function(e){o("measure",e)}),e.performance=r,"function"==typeof define&&(define.amd||define.ajs)&&define("performance",[],function(){return r}) // eslint-disable-line
+})(window);</script><script>
+
+(function () {
+	
+	window.TSMark = function (mark_label) {
+		if (!window.performance || !window.performance.mark) return;
+		performance.mark(mark_label);
+	};
+	window.TSMark('start_load');
+
+	
+	window.TSMeasureAndBeacon = function (measure_label, start_mark_label) {
+		if (!window.performance || !window.performance.mark || !window.performance.measure) {
+			return;
+		}
+
+		performance.mark(start_mark_label + '_end');
+
+		try {
+			performance.measure(measure_label, start_mark_label, start_mark_label + '_end');
+			window.TSBeacon(measure_label, performance.getEntriesByName(measure_label)[0].duration);
+		} catch (e) {
+			
+		}
+	};
+
+	
+	if ('sendBeacon' in navigator) {
+		window.TSBeacon = function (label, value) {
+			var endpoint_url = window.ts_endpoint_url || 'https://fxmagazine.cn/beacon/timing';
+			navigator.sendBeacon(
+				endpoint_url + '?data=' + encodeURIComponent(label + ':' + value),
+				''
+			);
+		};
+	} else {
+		window.TSBeacon = function (label, value) {
+			var endpoint_url = window.ts_endpoint_url || 'https://fxmagazine.cn/beacon/timing';
+			new Image().src = endpoint_url + '?data=' + encodeURIComponent(label + ':' + value);
+		};
+	}
+})();
+</script><script>window.TSMark('step_load');</script><script>
+(function () {
+	function throttle(callback, intervalMs) {
+		var wait = false;
+
+		return function () {
+			if (!wait) {
+				callback.apply(null, arguments);
+				wait = true;
+				setTimeout(function () {
+					wait = false;
+				}, intervalMs);
+			}
+		};
+	}
+
+	function getGenericLogger() {
+		return {
+			warn: (msg) => {
+				
+				if (window.console && console.warn) return console.warn(msg);
+			},
+			error: (msg) => {
+				if (!msg) return;
+
+				if (window.TSBeacon) return window.TSBeacon(msg, 1);
+
+				
+				if (window.console && console.warn) return console.warn(msg);
+			},
+		};
+	}
+
+	function globalErrorHandler(evt) {
+		if (!evt) return;
+
+		
+		var details = '';
+
+		var node = evt.srcElement || evt.target;
+
+		var genericLogger = getGenericLogger();
+
+		
+		
+		
+		
+		if (node && node.nodeName) {
+			var nodeSrc = '';
+			if (node.nodeName === 'SCRIPT') {
+				nodeSrc = node.src || 'unknown';
+				var errorType = evt.type || 'error';
+
+				
+				details = `[${errorType}] from script at ${nodeSrc} (failed to load?)`;
+			} else if (node.nodeName === 'IMG') {
+				nodeSrc = node.src || node.currentSrc;
+
+				genericLogger.warn(`<img> fired error with url = ${nodeSrc}`);
+				return;
+			}
+		}
+
+		
+		if (evt.error && evt.error.stack) {
+			details += ` ${evt.error.stack}`;
+		}
+
+		if (evt.filename) {
+			
+			var fileName = evt.filename;
+			var lineNo = evt.lineno;
+			var colNo = evt.colno;
+
+			details += ` from ${fileName}`;
+
+			
+			if (lineNo) {
+				details += ` @ line ${lineNo}, col ${colNo}`;
+			}
+		}
+
+		var msg;
+
+		
+		if (evt.error && evt.error.stack) {
+			
+			msg = details;
+		} else {
+			
+			msg = `${evt.message || ''} ${details}`;
+		}
+
+		
+		if (msg && msg.replace) msg = msg.replace(/\s+/g, ' ').trim();
+
+		if (!msg || !msg.length) {
+			if (node) {
+				var nodeName = node.nodeName || 'unknown';
+
+				
+				
+				
+				if (nodeName === 'VIDEO') {
+					return;
+				}
+
+				msg = `error event from node of ${nodeName}, no message provided?`;
+			} else {
+				msg = 'error event fired, no relevant message or node found';
+			}
+		}
+
+		var logPrefix = 'ERROR caught in js/inline/register_global_error_handler';
+
+		msg = `${logPrefix} - ${msg}`;
+
+		genericLogger.error(msg);
+	}
+
+	
+	
+	
+	var capture = true;
+
+	
+	var throttledHandler = throttle(globalErrorHandler, 10000);
+
+	window.addEventListener('error', throttledHandler, capture);
+})();
+</script><script type="text/javascript" src="bv1-8/manifest.b0ae9e1.primer.min.js" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"></script><script type="text/javascript" src="bv1-8/primer-translations_en-GB.94bc4b.js" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"></script><noscript><meta http-equiv="refresh" content="0; URL="></noscript><script type="text/javascript">var safe_hosts = ['app.optimizely.com', 'tinyspeck.dev.fxmagazine.cn'];
+
+if (self !== top && safe_hosts.indexOf(top.location.host) === -1) {
+	window.document.write(
+		'\u003Cstyle>body * {display:none !important;}\u003C/style>\u003Ca href="#" onclick=' +
+			'"top.location.href=window.location.href" style="display:block !important;padding:10px">Go to fxmagazine.cn\u003C/a>'
+	);
+}
+
+(function() {
+	var timer;
+	if (self !== top && safe_hosts.indexOf(top.location.host) === -1) {
+		timer = window.setInterval(function() {
+			if (window) {
+				try {
+					var pageEl = document.getElementById('page');
+					var clientEl = document.getElementById('client-ui');
+					var sectionEls = document.querySelectorAll('nav, header, section');
+
+					pageEl.parentNode.removeChild(pageEl);
+					clientEl.parentNode.removeChild(clientEl);
+					for (var i = 0; i < sectionEls.length; i++) {
+						sectionEls[i].parentNode.removeChild(sectionEls[i]);
+					}
+					window.TS = null;
+					window.TD = null;
+					window.clearInterval(timer);
+				} catch (e) {}	
+			}
+		}, 200);
+	}
+})();</script><script src="scripttemplates/otSDKStub.js" data-document-language="true" data-domain-script="fe78fd86-b58b-4f0c-a311-dd924eb08736"></script><script>
+function OptanonWrapper() {
+	window.dataLayer.push({event:'OneTrustGroupsUpdated'});
+	
+	Optanon.OnConsentChanged(function() {
+		if (window.drift && window.OnetrustActiveGroups && window.OnetrustActiveGroups.includes('C0003')) {
+		drift.load('a6yri4b82zv7');
+	}
+		if (window.TD && window.TD.clog) {
+			window.TD.clog.track('WEBSITE_CLICK', {
+				'trigger': window.OnetrustActiveGroups,
+				'step':'consent_changed',
+				'contexts': {
+					'ui_context': {
+						'step': TD.boot_data.clog_ui_step,
+						'action': 'settings',
+						'ui_component': 'inc_cookie_banner_v2'
+					}
+				}
+			});
+		}
+	});
+}</script><script type="text/javascript">
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+	'gtm.start': Date.now(),
+	'event' : 'gtm.js',
+	'secure_page' : false,
+});
+var firstScript = document.getElementsByTagName('script')[0];
+var thisScript = document.createElement('script');
+thisScript.async = true;
+thisScript.src = '//www.googletagmanager.com/gtm.js?id=GTM-KH2LPK';
+firstScript.parentNode.insertBefore(thisScript, firstScript);
+</script><script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(e) {
+	var gtmDataLayer = window.dataLayer || [];
+	var gtmTags = document.querySelectorAll('*[data-gtm-click]');
+	var gtmClickHandler = function(c) {
+		var gtm_events = this.getAttribute('data-gtm-click');
+		if (!gtm_events) return;
+		var gtm_events_arr = gtm_events.split(",");
+		for(var e=0; e < gtm_events_arr.length; e++) {
+			var ev = gtm_events_arr[e].trim();
+			gtmDataLayer.push({ 'event': ev });
+		}
+	};
+	for(var g=0; g < gtmTags.length; g++){
+		var elem = gtmTags[g];
+		elem.addEventListener('click', gtmClickHandler);
+	}
+});
+</script><script type="text/javascript">
+(function(e,c,b,f,d,g,a){e.SlackBeaconObject=d;
+e[d]=e[d]||function(){(e[d].q=e[d].q||[]).push([1*new Date(),arguments])};
+e[d].l=1*new Date();g=c.createElement(b);a=c.getElementsByTagName(b)[0];
+g.async=1;g.src=f;a.parentNode.insertBefore(g,a)
+})(window,document,"script","https://a.slack-edge.com/bv1-8/slack_beacon.bedc12c16f279519926d.min.js","sb");
+window.sb('set', 'token', '3307f436963e02d4f9eb85ce5159744c');
+window.sb('track', 'pageview');
+</script><script type="text/javascript">var TS_last_log_date = null;
+var TSMakeLogDate = function() {
+	var date = new Date();
+
+	var y = date.getFullYear();
+	var mo = date.getMonth()+1;
+	var d = date.getDate();
+
+	var time = {
+	  h: date.getHours(),
+	  mi: date.getMinutes(),
+	  s: date.getSeconds(),
+	  ms: date.getMilliseconds()
+	};
+
+	Object.keys(time).map(function(moment, index) {
+		if (moment == 'ms') {
+			if (time[moment] < 10) {
+				time[moment] = time[moment]+'00';
+			} else if (time[moment] < 100) {
+				time[moment] = time[moment]+'0';
+			}
+		} else if (time[moment] < 10) {
+			time[moment] = '0' + time[moment];
+		}
+	});
+
+	var str = y + '/' + mo + '/' + d + ' ' + time.h + ':' + time.mi + ':' + time.s + '.' + time.ms;
+	if (TS_last_log_date) {
+		var diff = date-TS_last_log_date;
+		//str+= ' ('+diff+'ms)';
+	}
+	TS_last_log_date = date;
+	return str+' ';
+}
+
+var parseDeepLinkRequest = function(code) {
+	var m = code.match(/"id":"([CDG][A-Z0-9]{8,})"/);
+	var id = m ? m[1] : null;
+
+	m = code.match(/"team":"(T[A-Z0-9]{8,})"/);
+	var team = m ? m[1] : null;
+
+	m = code.match(/"message":"([0-9]+\.[0-9]+)"/);
+	var message = m ? m[1] : null;
+
+	return { id: id, team: team, message: message };
+}
+
+if ('rendererEvalAsync' in window) {
+	var origRendererEvalAsync = window.rendererEvalAsync;
+	window.rendererEvalAsync = function(blob) {
+		try {
+			var data = JSON.parse(decodeURIComponent(atob(blob)));
+			if (data.code.match(/handleDeepLink/)) {
+				var request = parseDeepLinkRequest(data.code);
+				if (!request.id || !request.team || !request.message) return;
+
+				request.cmd = 'channel';
+				TSSSB.handleDeepLinkWithArgs(JSON.stringify(request));
+				return;
+			} else {
+				origRendererEvalAsync(blob);
+			}
+		} catch (e) {
+		}
+	}
+}</script><script type="text/javascript">var TSSSB = {
+	call: function() {
+		return false;
+	}
+};</script><title>Add apps to Slack | Apps and integrations | Slack App Directory</title><meta name="referrer" content="no-referrer"><meta name="superfish" content="nofish"><meta name="author" content="Slack"><meta name="description" content="Explore and install apps on the Slack App Directory"><meta name="keywords" content="slack app directory, slack app store, slack integrations, slack integration, slack bots, bots, slack plugin, slack plugins, slack connectors, slack extensions"><link href="32e60/style/rollup-slack_kit_legacy_adapters.css" rel="stylesheet" type="text/css" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"><link href="987490/style/rollup-app_directory.css" rel="stylesheet" type="text/css" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"><link href="3d80f/style/rollup-slack_kit_helpers.css" rel="stylesheet" id="slack_kit_helpers_stylesheet" type="text/css" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"><link href="95a0e/style/app_directory_landing_splash_pri.css" rel="stylesheet" type="text/css" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"><link href="780f3/style/_pillar.apps_splash_color_border.css" rel="stylesheet" type="text/css" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"><link href="7a9a78/style/libs/lato-2-compressed.css" rel="stylesheet" type="text/css" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"><meta property="og:type" content="website"><meta property="og:site_name" content="Slack"><meta property="og:title" content="Where work happens"><meta property="og:image" content="https://a.slack-edge.com/80588/marketing/img/meta/slack_hash_256.png"><meta property="og:description" content="Slack is where work flows. It’s where the people you need, the information you share and the tools you use come together to get things done."><meta property="og:url" content="https://fxmagazine.cn/intl/en-gb/apps"></head><body class="page_apps_directory_home"><input type="hidden" data-app="1" data-is-installed="false" data-is-slack-integration="false" data-is-directory-published="false" data-is-distributed="false"><input id="is_signed_in" type="hidden" value="false"><input id="user_can_manage_apps" type="hidden" value="false"><div id="apps-page-app-element"><header data-js="js-apps-header" class="hideSearch "><nav class="apps_nav top splash display_flex justify_content_between large_left_padding large_right_padding"><div class="display_flex align_items_center"><a href="javascript:;" class="logo" title="Slack" data-qa="logo" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_logo"></a></div><div class="flex_one display_flex justify_content_center align_items_center"><div class="page_apps_directory_home__search page_apps_directory_home__search--header search_input_container position_relative"><form action="/apps/search" class="apps_search_form"><label class="no_margin" for="apps_nav_search_input" aria-label="Search App Directory"></label><input name="q" id="apps_nav_search_input" type="text" class="apps_search_input apps_search_input__header search_input small no_bottom_margin" placeholder="Search App Directory" autocomplete="off" data-search="app_directory_header" disabled=""><i class="ts_icon ts_icon_search icon_search icon_search_input"></i><img class="icon_loading" src="80588/img/loading.gif"></form></div></div><div class="menu_actions"><ul class="small_left_margin"><li><a href="javascript:;" data-qa="browse" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_browse">Browse</a></li> <li><a href="javascript:;" data-qa="configure" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_manage">Manage</a></li> <li><a href="index1.html" data-qa="build_your_own" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_build">Build</a></li> <li><a data-gtm-click="optout_nav_signin" href="javascript:;" class="" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_sign_in">Sign in</a></li> <li><a data-gtm-click="SignUp" href="get-started.html#/create" class="btn btn_outline neutral_white_bg show_outline create_workspace" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=appdir_nav_create_workspace_loggedout">Create workspace</a></li></ul></div><div class="mobile_menu_actions"><h3 class="no_bottom_margin"><ts-icon id="mobile_search_open" class="ts_icon_search very_small_top_margin small_right_margin"></ts-icon></h3><ul><li><a href="#" id="mobile_menu_open" class="bordered_thick transparent_bg" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_mobile_menu_open">Menu</a></li></ul></div><div id="mobile_search" class="hidden neutral_white_bg position_absolute full_width full_height display_flex align_items_center left_padding right_padding"><h3 class="no_bottom_margin"><ts-icon class="ts_icon_search very_small_top_margin right_margin"></ts-icon></h3><form action="/apps/search" class="flex_one apps_search_form"><input name="q" type="text" class="mobile_search_input no_bottom_margin" placeholder="Search App Directory" autocomplete="off"></form><ts-icon id="mobile_search_close" class="ts_icon_times_circle very_small_top_margin left_margin"></ts-icon></div></nav><div id="apps_alert" class="alert_page alert_warning is_ephemeral hidden"><ts-icon class="ts_icon ts_icon_warning"></ts-icon><span class="error_msg">Hmm, that hasn’t worked. Try again?</span></div></header><nav class="apps_nav mobile_menu cool_purple_bg"><div class="mobile_menu_wrapper"><div class="mobile_menu_header"><a href="javascript:;" class="logo" title="Slack" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_logo"></a><h1 class="nav_title reset_letter_spacing black"><a href="javascript:;" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_title">App Directory</a></h1><a href="#" class="close" aria-label="close"><ts-icon class="ts_icon ts_icon_times"></ts-icon></a></div><ul><li><a href="javascript:;" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_browse">Browse</a></li><li><a href="javascript:;" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_manage">Manage</a></li><li><a href="index1.html" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_build">Build</a></li></ul><div class="mobile_menu_footer"><ul><li><a data-gtm-click="optout_nav_signin" class="mobile_menu_teams_list_link" href="javascript:;" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=nav_sign_in"><ts-icon class="ts_icon small float_none team_icon ts_icon_plus default signup_icon"></ts-icon><span class="switcher_label">Sign in to another workspace</span></a></li></ul></div></div></nav><div id="page"><div data-qa="page_contents"><div class="splash_container" id="js-splash_interactive_content"><div class="splash_container__background"><div class="splash_container__background--left"></div><div class="splash_container__background--center"><img class="splash_container__background_image hide_on_mobile" src="80588/img/apps/background_center_2.0.png" srcset="80588/img/apps/background_center_2.0.png 1x, https://a.slack-edge.com/80588/img/apps/background_center_2.0@2x.png 2x"></div><div class="splash_container__background--right"></div></div><div class="splash_wrapper"><div class="splash_text"><h1 class="splash_text__title">Add apps, get work done</h1><h3 class="splash_text__description">Get reports, start calls, file tickets <br>and more – right within Slack.</h3><div><a class="splash_text__button btn" data-qa="apps_home_cta" data-track="btn_app_directory_hero_cta" href="javascript:;">Get essential apps</a></div></div><div class="splash_interactive"><div class="splash_interactive__buttons"><button data-qa="drive" aria-label="Google Drive" data-icon="drive" data-track="tab_drive" class="splash_interactive__button splash_interactive__button--drive splash_interactive__button--active"></button><button data-qa="zoom" aria-label="Zoom" data-icon="zoom" data-track="tab_zoom" class="splash_interactive__button splash_interactive__button--zoom"></button><button data-qa="jira" aria-label="Jira" data-icon="jira" data-track="tab_jira" class="splash_interactive__button splash_interactive__button--jira"></button><button data-qa="salesforce" aria-label="Salesforce" data-icon="salesforce" data-track="tab_salesforce" class="splash_interactive__button splash_interactive__button--salesforce"></button></div><a data-qa="apps_home_interactive_links" class="splash_interactive__window_link slide-drive is-visible" href="javascript:;" data-js="slide-drive" data-track="slide_drive"><div class="splash_interactive__window"><div data-js="window_content_container" class="splash_interactive__window_content_container"><div data-js="window_headline" class="splash_interactive__window_headline">Share and search files…</div><div data-js="window_message" class="splash_interactive__window_message splash_interactive__window_message--show"><div data-js="window_message_image" class="splash_interactive__window_message_image" style="background-image: url(img/apps/profile_drive@2x.png)"></div><div class="splash_interactive__window_message_content"><div data-js="window_message_content_username" class="splash_interactive__window_message_content_username">Lisa Zhang</div><div data-js="window_message_content_text" class="splash_interactive__window_message_content_text"><span>shared this file</span><i class="splash_interactive__window_message_content_text_icon c-deprecated-icon c-icon--caret-down"></i></div></div></div><img data-js="window_response" class="splash_interactive__window_response splash_interactive__window_response--show" alt="New-starter induction document shared from Google Drive" src="img/apps/response_drive_2.0@1x.png" srcset="img/apps/response_drive_2.0@1x.png 1x, https://fxmagazine.cn/img/apps/response_drive_2.0@2x.png 2x"></div></div></a><a data-qa="apps_home_interactive_links" class="splash_interactive__window_link slide-zoom is-typing" href="javascript:;" data-js="slide-zoom" data-track="slide_zoom"><div class="splash_interactive__window"><div data-js="window_content_container" class="splash_interactive__window_content_container"><div data-js="window_headline" class="splash_interactive__window_headline">Start an instant meeting…</div><div data-js="window_message" class="splash_interactive__window_message splash_interactive__window_message--show"><div data-js="window_message_image" class="splash_interactive__window_message_image" style="background-image: url(img/apps/profile_zoom@2x.png)"></div><div class="splash_interactive__window_message_content"><div data-js="window_message_content_username" class="splash_interactive__window_message_content_username">Bruce Olson</div><div data-js="window_message_content_text" class="splash_interactive__window_message_content_text"><span>/zoom meeting Summer Offsite Prep</span><i class="splash_interactive__window_message_content_text_icon c-deprecated-icon c-icon--caret-down"></i></div></div></div><img data-js="window_response" class="splash_interactive__window_response splash_interactive__window_response--show" alt="Zoom: Bruce started a meeting. Summer Awayday Prep" src="img/apps/response_zoom_4.0@1x.png" srcset="img/apps/response_zoom_4.0@1x.png 1x, https://fxmagazine.cn/img/apps/response_zoom_4.0@2x.png 2x"></div></div></a><a data-qa="apps_home_interactive_links" class="splash_interactive__window_link slide-jira is-typing" href="javascript:;" data-js="slide-jira" data-track="slide_jira"><div class="splash_interactive__window"><div data-js="window_content_container" class="splash_interactive__window_content_container"><div data-js="window_headline" class="splash_interactive__window_headline">Preview issues and get updates…</div><div data-js="window_message" class="splash_interactive__window_message splash_interactive__window_message--show"><div data-js="window_message_image" class="splash_interactive__window_message_image" style="background-image: url(img/apps/profile_jira_2.0@2x.png)"></div><div class="splash_interactive__window_message_content"><div data-js="window_message_content_username" class="splash_interactive__window_message_content_username">Angela Zamfir</div><div data-js="window_message_content_text" class="splash_interactive__window_message_content_text"><span>Can we get ISSUE-123 prioritized today?</span><i class="splash_interactive__window_message_content_text_icon c-deprecated-icon c-icon--caret-down"></i></div></div></div><img data-js="window_response" class="splash_interactive__window_response splash_interactive__window_response--show" alt="Issue-123: Update rocketship fins. Status: Ready for QA." src="img/apps/response_jira_2.0@1x.png" srcset="img/apps/response_jira_2.0@1x.png 1x, https://fxmagazine.cn/img/apps/response_jira_2.0@2x.png 2x"></div></div></a><a data-qa="apps_home_interactive_links" class="splash_interactive__window_link slide-salesforce is-typing" href="javascript:;" data-js="slide-salesforce" data-track="slide_salesforce"><div class="splash_interactive__window"><div data-js="window_content_container" class="splash_interactive__window_content_container"><div data-js="window_headline" class="splash_interactive__window_headline">Quickly find account details…</div><div data-js="window_message" class="splash_interactive__window_message splash_interactive__window_message--show"><div data-js="window_message_image" class="splash_interactive__window_message_image" style="background-image: url(img/apps/profile_salesforce@2x.png)"></div><div class="splash_interactive__window_message_content"><div data-js="window_message_content_username" class="splash_interactive__window_message_content_username">Arcadio Buendía</div><div data-js="window_message_content_text" class="splash_interactive__window_message_content_text"><span>/salesforce sunny farms</span><i class="splash_interactive__window_message_content_text_icon c-deprecated-icon c-icon--caret-down"></i></div></div></div><img data-js="window_response" class="splash_interactive__window_response splash_interactive__window_response--show" alt="Salesforce: Glenmore Farm account. Show account." src="img/apps/response_salesforce_2.0@1x.png" srcset="img/apps/response_salesforce_2.0@1x.png 1x, https://fxmagazine.cn/img/apps/response_salesforce_2.0@2x.png 2x"></div></div></a></div></div><div class="splash_color_border" data-js="splash_color_border"><div class="splash_color_border_cell splash_color_border_cell--yellow"></div><div class="splash_color_border_cell splash_color_border_cell--purple"></div><div class="splash_color_border_cell splash_color_border_cell--red"></div><div class="splash_color_border_cell splash_color_border_cell--green"></div><div class="splash_color_border_cell splash_color_border_cell--blue"></div><div class="splash_color_border_cell splash_color_border_cell--yellow"></div><div class="splash_color_border_cell splash_color_border_cell--purple"></div><div class="splash_color_border_cell splash_color_border_cell--red"></div></div></div><div class="page_apps_directory_home__content clearfix"><div class="apps_categories"><div data-js="js-toggle-categories" class="apps_categories_selector small show_on_mobile"><ts-icon class="apps_categories_selector_caret ts_icon_chevron_medium_right"></ts-icon><a href="javascript:;" class="app_categories_selector_label indifferent_grey no_underline selected">View all categories</a></div><div data-js="js-categories-list" class="apps_categories_selector__list quiet_shadow show_on_mobile"><ts-icon class="apps_categories_selector_caret ts_icon_times"></ts-icon><a data-js="js-toggle-categories" href="javascript:;" class="app_categories_selector_label app_categories_selector_label--hide indifferent_grey bold no_underline selected">Hide categories</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Analytics</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Communication</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Customer support</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Design</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Developer tools</a><a class="apps_categories_selector_link no_underline " href="javascript:;">File management</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Health &amp; wellness</a><a class="apps_categories_selector_link no_underline " href="javascript:;">HR &amp; team culture</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Marketing</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Office management</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Finance</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Productivity</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Project management</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Sales</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Security &amp; compliance</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Social &amp; fun</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Travel</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Voice &amp; video</a><a class="apps_categories_selector_link no_underline " href="javascript:;">Media &amp; news</a></div></div><div class="col span_1_of_4 hide_on_mobile"><div class="apps_categories"><div class="sidebar_menu hide_on_mobile"><h4 class="sidebar_menu_header">Staff picks</h4><ul class="sidebar_menu_list"><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14540943217">Featured</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="998926294197">Working from home</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="590194263970">Daily tools</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="208406118117">Essential apps</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14537211989">New &amp; noteworthy</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14537212037">Brilliant bots</a></li></ul></div><div class="sidebar_menu hide_on_mobile"><h4 class="sidebar_menu_header">App collections</h4><ul class="sidebar_menu_list"><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-collection="office365-for-slack">Office 365</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-collection="gsuite-for-slack">G Suite</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-collection="atlassian-for-slack">Atlassian</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-collection="external-collaboration">External collaboration apps</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-collection="working-from-home">Working from home</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-collection="shortcuts">Shortcuts</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-collection="workflows">Workflows</a></li></ul></div><div class="sidebar_menu hide_on_mobile"><h4 class="sidebar_menu_header">Categories</h4><ul class="sidebar_menu_list"><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="16202937954">Analytics</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14537212213">Communication</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14535421828">Customer support</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14541148422">Design</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14535421780">Developer tools</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14535421812">File management</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="21876175792">Health &amp; wellness</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14537212309">HR &amp; team culture</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14535421844">Marketing</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14540943361">Office management</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14541320519">Finance</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14541980226">Productivity</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14542123616">Project management</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="16199799043">Sales</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14540943345">Security &amp; compliance</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="14541980018">Social &amp; fun</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="24974994071">Travel</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="257567271124">Voice &amp; video</a></li><li><a href="javascript:;" class="sidebar_menu_list_item" data-app-category="257651584373">Media &amp; news</a></li></ul></div></div></div><div class="col span_3_of_4 no_padding"><div class="flex_one display_flex justify_content_center align_items_center"><div class="page_apps_directory_home__search search_input_container position_relative large_bottom_margin"><form action="/apps/search" class="apps_search_form" id="apps_directory_search_form"><label class="no_margin" for="apps_directory_search_input" aria-label="Search App Directory"></label><input name="q" id="apps_directory_search_input" data-qa="apps_directory_search_input" type="text" class="apps_search_input apps_search_input__body search_input small no_bottom_margin" placeholder="Find a new app or a service you already use." autocomplete="off" data-search="app_directory_body"><i class="ts_icon ts_icon_search icon_search icon_search_input"></i><img class="icon_loading" src="80588/img/loading.gif"></form></div></div><a href="javascript:;" class="app_collection_card large_bottom_margin" data-app-collection="workflows" data-app-collection-banner=""><div class="app_collection_card__workflows_image"></div><div class="app_collection_card__footer"><h4>
+									Turn routine tasks into automated workflows
+</h4><div class="app_collection_card__footer_content"><p>Workflow Builder keeps work moving forward – inside and outside of Slack</p></div></div></a><div id="section_top_apps" class="large_bottom_margin clearfix hide_on_mobile"><a href="javascript:;" class="large_app_card flex_third featured_app_row large_app_card--homepage" data-app-id="A017MJ9UREW" data-app-name="DocuSign eSignature" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="1" data-category-id="14540943217"><div class="featured_app"><div class="featured_app_background_layer_1" style="background-color: #b0ce04"></div><div class="featured_app_background_layer_2" style="background: linear-gradient(135deg, #b0ce04 0%, #ffffff 100%);"></div><img class="large_app_icon quiet_shadow" src="2020-07-23/1272247436353_793a149f241acbdfde.png" srcset="2020-07-23/1272247436353_793a149f241acbdfde.png 1x, https://avatars.slack-edge.com/2020-07-23/1272247436353_793a149f241acbdfde89_512.png 2x"></div><div class="small_padding left_padding indifferent_grey height_60 display_flex flex_direction_column justify_content_center"><div class="black app_name">DocuSign eSignature</div><div><div class="app_category small_text">Communication</div></div></div></a><a href="javascript:;" class="large_app_card flex_third featured_app_row large_app_card--homepage" data-app-id="AABU499TM" data-app-name="monday.com" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="2" data-category-id="14540943217"><div class="featured_app"><div class="featured_app_background_layer_1" style="background-color: #ffcd00"></div><div class="featured_app_background_layer_2" style="background: linear-gradient(135deg, #ffcd00 0%, #ffffff 100%);"></div><img class="large_app_icon quiet_shadow" src="avatars/2018-04-24/351412048224_9f4cd62b61d0706e9a9.png" srcset="avatars/2018-04-24/351412048224_9f4cd62b61d0706e9a9.png 1x, https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-04-24/351412048224_9f4cd62b61d0706e9a96_512.png 2x"></div><div class="small_padding left_padding indifferent_grey height_60 display_flex flex_direction_column justify_content_center"><div class="black app_name">monday.com</div><div><div class="app_category small_text">Communication</div></div></div></a><a href="javascript:;" class="large_app_card flex_third featured_app_row large_app_card--homepage" data-app-id="AFS3736H3" data-app-name="Slack for Outlook" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="3" data-category-id="14540943217"><div class="featured_app"><div class="featured_app_background_layer_1" style="background-color: #0d0045"></div><div class="featured_app_background_layer_2" style="background: linear-gradient(135deg, #0d0045 0%, #ffffff 100%);"></div><img class="large_app_icon quiet_shadow" src="2019-05-15/636116561829_46b2865d45aa5e56cf51.png" srcset="2019-05-15/636116561829_46b2865d45aa5e56cf51.png 1x, https://avatars.slack-edge.com/2019-05-15/636116561829_46b2865d45aa5e56cf5e_512.png 2x"></div><div class="small_padding left_padding indifferent_grey height_60 display_flex flex_direction_column justify_content_center"><div class="black app_name">Slack for Outlook</div><div><div class="app_category small_text">Communication</div></div></div></a></div><div class="bottom_padding clearfix show_on_mobile"><h4 class="black inline">Featured apps</h4></div><div class="large_bottom_margin clearfix show_on_mobile"><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A017MJ9UREW" data-app-name="DocuSign eSignature" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="1" data-category-id="14540943217"><img src="2020-07-23/1272247436353_793a149f241acbdfde1.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">DocuSign eSignature</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AABU499TM" data-app-name="monday.com" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="2" data-category-id="14540943217"><img src="avatars/2018-04-24/351412048224_9f4cd62b61d0706e9a91.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">monday.com</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AFS3736H3" data-app-name="Slack for Outlook" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="3" data-category-id="14540943217"><img src="2019-05-15/636116561829_46b2865d45aa5e56cf52.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Slack for Outlook</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a></div><div><div class="bottom_padding clearfix"><h4 class="black inline">Working from home</h4><a class="float_right" href="javascript:;" data-app-category-see-all="" data-app-category="998926294197">See all</a></div><div class="large_bottom_margin clearfix"><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A5W6QMNK0" data-app-name="Shuffl" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="1" data-category-id="998926294197" data-category-position="1"><img src="2020-09-09/1353314830211_5d627217481ee5f99f.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Shuffl</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A0GU27WR1" data-app-name="Officevibe" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="2" data-category-id="998926294197" data-category-position="1"><img src="2020-03-11/993310305396_4bb4886510e9bc23072.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Officevibe</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AQMDLSL72" data-app-name="WaterCooler" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="3" data-category-id="998926294197" data-category-position="1"><img src="2020-02-19/946022727858_ac82dce4e593d729b9b.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">WaterCooler</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AUG0TSAR0" data-app-name="Inkrement" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="4" data-category-id="998926294197" data-category-position="1"><img src="2020-10-11/1421185278515_ff91a3a5e2bbfbae7d.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Inkrement</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A04E6JX41" data-app-name="Polly" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="5" data-category-id="998926294197" data-category-position="1"><img src="2020-10-26/1466083688641_05afc842ead4d799a4.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Polly</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A01734836JY" data-app-name="Asana" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="6" data-category-id="998926294197" data-category-position="1"><img src="2020-07-10/1247741304785_28de1a5980380c25f3.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Asana</div><div class="app_category small_text overflow_ellipsis">Productivity</div></div></a></div><div class="bottom_padding clearfix"><h4 class="black inline">Daily tools</h4><a class="float_right" href="javascript:;" data-app-category-see-all="" data-app-category="590194263970">See all</a></div><div class="large_bottom_margin clearfix"><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A5P5FDK33" data-app-name="Cisco Webex Meetings" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="1" data-category-id="590194263970" data-category-position="2"><img src="2018-06-17/384053245894_495b0d8bc7454e59a3c.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Cisco Webex Meetings</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AGC34MF1T" data-app-name="BlueJeans" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="2" data-category-id="590194263970" data-category-position="2"><img src="2019-02-20/555043726000_b74e71a9404ff170e66.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">BlueJeans</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A5GE9BMQC" data-app-name="Zoom" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="3" data-category-id="590194263970" data-category-position="2"><img src="avatars/2017-09-21/245295805989_06e77af1bfb8e3c81d4.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Zoom</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="ADZ494LHY" data-app-name="Google Calendar" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="4" data-category-id="590194263970" data-category-position="2"><img src="2019-01-02/516787378166_a17b826eedc1dec2f3f1.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Google Calendar</div><div class="app_category small_text overflow_ellipsis">Office management</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AFV5ECLBZ" data-app-name="Outlook Calendar" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="5" data-category-id="590194263970" data-category-position="2"><img src="2019-02-25/560177567317_2b00a773af5746c2c0e1.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Outlook Calendar</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AJBCW09GU" data-app-name="Microsoft OneDrive" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="6" data-category-id="590194263970" data-category-position="2"><img src="2019-05-01/626148669510_848578d4c3743d54573.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Microsoft OneDrive</div><div class="app_category small_text overflow_ellipsis">File management</div></div></a></div><div class="bottom_padding clearfix"><h4 class="black inline">Essential apps</h4><a class="float_right" href="javascript:;" data-app-category-see-all="" data-app-category="208406118117">See all</a></div><div class="large_bottom_margin clearfix"><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A074YH40Z" data-app-name="Trello" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="1" data-category-id="208406118117" data-category-position="3"><img src="2016-05-18/44042585718_0e6a837d5b63fd1cfc071.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Trello</div><div class="app_category small_text overflow_ellipsis">Productivity</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A0F7XDW93" data-app-name="Twitter" data-app-is-installed="false" data-app-is-slack-owned="true" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="2" data-category-id="208406118117" data-category-position="3"><img src="80588/img/services/twitter_96.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Twitter</div><div class="app_category small_text overflow_ellipsis">Customer support</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A355V71K7" data-app-name="Standup ly" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="3" data-category-id="208406118117" data-category-position="3"><img src="2019-01-22/530635819106_1a9edef80a671c6f0cf.jpg" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Standup ly</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AKGPGUFP1" data-app-name="Salesforce" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="4" data-category-id="208406118117" data-category-position="3"><img src="2019-08-29/742984655284_3911bdd1458af62e7ba1.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Salesforce</div><div class="app_category small_text overflow_ellipsis">Customer support</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A1FKYAUUX" data-app-name="PagerDuty" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="5" data-category-id="208406118117" data-category-position="3"><img src="2019-09-10/742836414770_a5812ce768ce4fa595b.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">PagerDuty</div><div class="app_category small_text overflow_ellipsis">Developer tools</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A48SSMR0F" data-app-name="Workstreams" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="6" data-category-id="208406118117" data-category-position="3"><img src="2019-01-30/536852289265_7ff5b59d4db5627841b.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Workstreams</div><div class="app_category small_text overflow_ellipsis">Office management</div></div></a></div><div class="bottom_padding clearfix"><h4 class="black inline">New &amp; noteworthy</h4><a class="float_right" href="javascript:;" data-app-category-see-all="" data-app-category="14537211989">See all</a></div><div class="large_bottom_margin clearfix"><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A012FK9H97V" data-app-name="Rootly" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="1" data-category-id="14537211989" data-category-position="4"><img src="2020-04-23/1082067542933_8e3d8ebb1d114b7982.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Rootly</div><div class="app_category small_text overflow_ellipsis">Developer tools</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A01B9KE3K5E" data-app-name="Approvals" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="2" data-category-id="14537211989" data-category-position="4"><img src="2020-10-25/1475934473360_a627032a3d03048b5a.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Approvals</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A01C8PTTYUE" data-app-name="comrades" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="3" data-category-id="14537211989" data-category-position="4"><img src="2020-11-10/1497169519460_2b6dfbe8ce78b46a2d.jpg" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">comrades</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="APW6H167L" data-app-name="Ricotta" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="4" data-category-id="14537211989" data-category-position="4"><img src="2019-11-06/825017589184_de172b67827bf2e3fd4.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Ricotta</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A015MBGBDQR" data-app-name="Caravan" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="5" data-category-id="14537211989" data-category-position="4"><img src="2020-10-09/1425127132996_af42d515a63cfc634b.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Caravan</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A01805EQE2K" data-app-name="Anti-Racism Daily" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="6" data-category-id="14537211989" data-category-position="4"><img src="2020-09-02/1340227356403_436b258517d6505b62.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Anti-Racism Daily</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a></div><div class="bottom_padding clearfix"><h4 class="black inline">Brilliant bots</h4><a class="float_right" href="javascript:;" data-app-category-see-all="" data-app-category="14537212037">See all</a></div><div class="large_bottom_margin clearfix"><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A0125LGRVEZ" data-app-name="pushupbot" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="1" data-category-id="14537212037" data-category-position="5"><img src="2020-06-05/1166947725845_553b686f52e836601c.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">pushupbot</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A03BS4Q25" data-app-name="Chatlio" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="2" data-category-id="14537212037" data-category-position="5"><img src="avatars/2017-12-13/287477734551_64d94c46be09261023b1.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Chatlio</div><div class="app_category small_text overflow_ellipsis">Customer support</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A7W497ADD" data-app-name="Kipwise Wiki" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="3" data-category-id="14537212037" data-category-position="5"><img src="avatars/2018-02-15/316074573012_6e20e900d2366268a87.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">Kipwise Wiki</div><div class="app_category small_text overflow_ellipsis">Customer support</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="AELEX1TU3" data-app-name="PTO ⚡ by Roots" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="4" data-category-id="14537212037" data-category-position="5"><img src="2020-10-02/1428282573568_53db20014818142b9e.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">PTO ⚡ by Roots</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A011RTQ1HNC" data-app-name="ArtLens for Slack" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="5" data-category-id="14537212037" data-category-position="5"><img src="2020-05-26/1145689478690_3ab9ee751d9a421d63.jpg" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">ArtLens for Slack</div><div class="app_category small_text overflow_ellipsis">HR &amp; team culture</div></div></a><a href="javascript:;" class="app_card flex_third display_flex align_items_center height_60 featured_category_app app_card--homepage" data-app-id="A6U5NG15Z" data-app-name="OneBar" data-app-is-installed="false" data-app-is-slack-owned="false" data-app-is-directory-published="true" data-app-is-distributed="true" data-position="6" data-category-id="14537212037" data-category-position="5"><img src="2019-05-24/634098648099_189fa7241f16035b853.png" class="icon_40"><div class="small_padding left_padding indifferent_grey inline_block overflow_ellipsis"><div class="black overflow_ellipsis app_name">OneBar</div><div class="app_category small_text overflow_ellipsis">Communication</div></div></a></div></div></div></div></div><div id="overlay"></div></div></div><footer data-qa="footer"><section class="links"><div class="grid"><div class="col span_1_of_4 nav_col"><ul><li class="cat_1">Using Slack</li><li><a href="javascript:;" data-qa="product_footer" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_product">Product</a></li><li><a href="enterprise3.html" data-qa="enterprise_footer" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_enterprise">Enterprise</a></li><li><a href="javascript:;" data-qa="pricing_footer" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_pricing">Pricing</a></li><li><a href="javascript:;" data-qa="support_footer" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_support">Support</a></li><li><a href="javascript:;" data-qa="getting_started" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_getting_started">Slack guides</a></li><li><a href="javascript:;" data-qa="app_directory" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_app_directory">App Directory</a></li><li><a href="index1.html" data-qa="api" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_api">API</a></li></ul></div><div class="col span_1_of_4 nav_col"><ul><li class="cat_2">Slack <ts-icon class="ts_icon_heart"></ts-icon></li><li><a href="javascript:;" data-qa="jobs" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_jobs">Jobs</a></li><li><a href="javascript:;" data-qa="customers" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_customers">Customers</a></li><li><a href="javascript:;" data-qa="developers" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_developers">Developers</a></li><li><a href="javascript:;" data-qa="events" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_events">Events</a></li><li><a href="javascript:;" data-qa="blog_footer" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_blog">Blog</a></li></ul></div><div class="col span_1_of_4 nav_col"><ul><li class="cat_3">Legal</li><li><a href="javascript:;" data-qa="privacy" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_privacy">Privacy</a></li><li><a href="security.html" data-qa="security" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_security">Security</a></li><li><a href="javascript:;" data-qa="tos" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_tos">Terms of service</a></li><li><a href="javascript:;" data-qa="policies" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_policies">Policies</a></li></ul></div><div class="col span_1_of_4 nav_col"><ul><li class="cat_4">Handy links</li><li><a href="javascript:;" data-qa="downloads" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_downloads">Download desktop app</a></li><li><a href="javascript:;" data-qa="downloads_mobile" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_downloads_mobile">Download mobile app</a></li><li><a href="javascript:;" data-qa="brand_guidelines" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_brand_guidelines">Brand guidelines</a></li><li><a href="javascript:;" data-qa="slack_at_work" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_slack_at_work">Slack at work</a></li><li><a href="index2.html" data-qa="status" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_status">Status</a></li></ul></div></div></section><div class="footnote"><section><a href="index5.html" aria-label="Slack homepage" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_slack_icon"><ts-icon class="c-icon--slack" aria-hidden=""></ts-icon></a><ul><li><a href="new.html" data-qa="contact_us" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_contact_us">Contact us</a></li><li><a href="javascript:;" data-qa="slack_twitter" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_slack_twitter" aria-label="Slack on Twitter"><ts-icon class="ts_icon_twitter" aria-hidden=""></ts-icon></a></li><li class="yt"><a href="javascript:;" data-qa="slack_youtube" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=footer_slack_youtube" aria-label="Slack on YouTube"><ts-icon class="ts_icon_youtube" aria-hidden=""></ts-icon></a></li></ul></section></div></footer><script type="text/javascript">
+/**
+ * A placeholder function that the build script uses to
+ * replace file paths with their CDN versions.
+ *
+ * @param {String} file_path - File path
+ * @returns {String}
+ */
+function vvv(file_path) {
+		 var vvv_warning = 'You cannot use vvv on dynamic values. Please make sure you only pass in static file paths.'; if (window.TS && window.TS.warn) { window.TS.warn(vvv_warning); } else { console.warn(vvv_warning); } 
+	return file_path;
+}
+
+var cdn_url = "https:\/\/a.slack-edge.com";
+var vvv_abs_url = "https:\/\/fxmagazine.cn\/";
+var inc_js_setup_data = {
+	emoji_sheets: {
+		apple: 'https://a.slack-edge.com/80588/img/emoji_2017_12_06/sheet_apple_64_indexed_256.png',
+		google: 'https://a.slack-edge.com/80588/img/emoji_2017_12_06/sheet_google_64_indexed_256.png',
+	},
+};
+</script><script nonce="" type="text/javascript">	// common boot_data
+	var boot_data = {"no_login":false};</script><script type="text/javascript" src="bv1-8/primer-vendor.0f4344e.primer.min.js" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"></script><script type="text/javascript" src="bv1-8/app-directory-core.3fae1be.prime.js" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous"></script><link href="bv1-8/app-directory-core.3fae1be336693.css" rel="stylesheet" type="text/css" onload="window._cdn ? _cdn.ok(this, arguments) : null" onerror="window._cdn ? _cdn.failed(this, arguments) : null" crossorigin="anonymous">
+
+<!-- slack-www-hhvm-main-iad-o4xy/ 2020-11-24 18:45:59/ vfae2da3ea481a93ca7d8ff5717a4dd4f71034a01/ B:H -->
+
+</body></html>

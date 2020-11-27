@@ -1,0 +1,38 @@
+.m-square-list{list-style:none;margin-left:0;padding-left:0}
+.m-square-list>li:not(.c-stat){padding-left:30px}
+.m-square-list>li:not(.c-stat):before{font-family:arial,helvetica,sans-serif;position:relative;float:left;color:var(--theme-bullet-color);text-indent:-30px;speak:none;content:'\25A0';top:-3px}
+@media screen and (min-width:0) and (max-width:863px){.c-billboard__illustration img{margin-top:4rem}
+}
+.c-product-container.c-product-container,.c-product-container.v--adjoined{box-shadow:0 0 2rem rgba(0,0,0,.1)}
+.c-product-container.c-product-container .p-search,.c-product-container.v--adjoined .p-search{border-radius:0}
+@media screen and (min-width:64rem){.c-knowledge-box{margin-left:2rem}
+}
+@media screen and (min-width:64rem) and (max-width:1279px){.o-section--feature{padding:0}
+.c-knowledge-access{grid-template-columns:58% 30%}
+}
+.c-knowledge-access-content,.c-knowledge-improve-content{margin:0 auto}
+.c-knowledge-access-content img,.c-knowledge-improve-content img{margin-right:.5rem}
+@media screen and (min-width:64rem){.c-knowledge-access-content h2,.c-knowledge-improve-content h2{margin-top:4.5rem}
+.c-knowledge-access-content img,.c-knowledge-improve-content img{margin-right:1rem}
+}
+.c-knowledge-improve{margin-left:0;margin-top:0}
+.c-knowledge-improve img{margin-left:auto!important}
+@media screen and (min-width:48rem){.c-knowledge-improve img{margin:0 auto;margin-top:2rem}
+}
+@media screen and (min-width:64rem){.c-knowledge-improve{margin:0 auto}
+.c-knowledge-collaboration h3{padding-top:2rem}
+}
+.c-knowledge-management .ks--headings{margin:0 auto 50px}
+@media screen and (min-width:80rem){.c-knowledge-improve-content{padding-left:4rem}
+.c-knowledge-management .ks--headings{margin:50px auto;max-width:44rem;text-align:center}
+}
+.c-knowledge-customer-stories{text-align:center}
+.knowledge_sharing_integration_ui{margin-bottom:0;box-shadow:none}
+section.u-margin--top-ks{padding-top:5rem;padding-bottom:3rem}
+@media screen and (min-width:48rem){.c-knowledge-improve img{margin-top:0}
+}
+.c-app-module a.c-panel{width:100%;max-width:400px}
+@media screen and (min-width:64rem){div.c-knowledge-sharing-product-ui__container.v--inverse{grid-template-columns:44% 56%}
+.knowledge_sharing_integration_ui.c-product-container{padding-left:60px;background:#4a154b}
+.knowledge_sharing_integration_ui.c-product-container .doc_sharing_product_ui{width:34rem;margin-bottom:0}
+}
